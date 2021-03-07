@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121.667" height="100.933" viewBox="0 0 121.667 100.933">
+  <defs>
+    <filter id="laptop-code-solid" x="0" y="0" width="121.667" height="100.933" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#laptop-code-solid)">
+    <path id="laptop-code-solid-2" data-name="laptop-code-solid" d="M41.31,42.382a2.592,2.592,0,0,0,3.666,0l1.832-1.832a2.592,2.592,0,0,0,0-3.666L41.021,31.1l5.784-5.786a2.592,2.592,0,0,0,0-3.666l-1.832-1.832a2.592,2.592,0,0,0-3.666,0l-9.45,9.45a2.592,2.592,0,0,0,0,3.666Zm15.552-1.83,1.832,1.832a2.592,2.592,0,0,0,3.666,0l9.45-9.45a2.592,2.592,0,0,0,0-3.666l-9.45-9.45a2.592,2.592,0,0,0-3.666,0L56.861,21.65a2.592,2.592,0,0,0,0,3.666L62.645,31.1l-5.784,5.786a2.592,2.592,0,0,0,0,3.666Zm44.214,26.832H61.8a5.106,5.106,0,0,1-5.3,5.183H46.65a5.5,5.5,0,0,1-5.308-5.183H2.592A2.6,2.6,0,0,0,0,69.975v2.592A10.4,10.4,0,0,0,10.367,82.933H93.3a10.4,10.4,0,0,0,10.367-10.367V69.975A2.6,2.6,0,0,0,101.075,67.383ZM93.3,7.775A7.8,7.8,0,0,0,85.525,0H18.142a7.8,7.8,0,0,0-7.775,7.775V62.2H93.3ZM82.933,51.833h-62.2V10.367h62.2Z" transform="translate(9 6)" fill="#4448c9"/>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+/*  Table of Contents
+1. Global Styles
+2. Typography
+3. Layout
+4. Components
+*/
+
+/*  =============
+    1. Global Styles 
+    =============
+*/
+
+/*  =============
+    2. Typography 
+    h1,h2,a,p
+    =============
+*/
+
+/*  =============
+    3. Layout 
+    header, footer
+    =============
+*/
+
+/*  =============
+    4. Components 
+    buttons, cards
+    =============
+*/
+
+
+:root{
+    $bg-color-primary: #000918;
+    $highlight-color-main: #FF461D;
+    $bg-overlay: rgba(0,9,24,.8);
+    $text-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}

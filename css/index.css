@@ -1,0 +1,37 @@
+/*  Table of Contents
+1. Global Styles
+2. Typography
+3. Layout
+4. Components
+*/
+/*  =============
+    1. Global Styles 
+    =============
+*/
+/*  =============
+    2. Typography 
+    h1,h2,a,p
+    =============
+*/
+/*  =============
+    3. Layout 
+    header, footer
+    =============
+*/
+/*  =============
+    4. Components 
+    buttons, cards
+    =============
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=index.css.map */

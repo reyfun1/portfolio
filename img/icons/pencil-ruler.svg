@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106.005" height="106.005" viewBox="0 0 106.005 106.005">
+  <defs>
+    <filter id="pencil-ruler-solid" x="0" y="0" width="106.005" height="106.005" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#pencil-ruler-solid)">
+    <path id="pencil-ruler-solid-2" data-name="pencil-ruler-solid" d="M18.81,41.938,41.942,18.809l-7.583-7.583-10.6,10.6a1.361,1.361,0,0,1-1.927,0L19.9,19.9a1.361,1.361,0,0,1,0-1.927l10.6-10.6L24.723,1.588a5.452,5.452,0,0,0-7.711,0L1.593,17.008a5.453,5.453,0,0,0,0,7.711L18.81,41.938ZM85.581,21.862a8.257,8.257,0,0,0,0-11.676L77.8,2.408a8.26,8.26,0,0,0-11.679,0l-7.91,7.908L77.671,29.774l7.91-7.912ZM54.324,14.208,3.275,65.25.051,83.717a3.649,3.649,0,0,0,4.227,4.221L22.746,84.7,73.781,33.663ZM86.4,63.268l-5.782-5.782-10.6,10.6a1.361,1.361,0,0,1-1.927,0l-1.927-1.927a1.364,1.364,0,0,1,0-1.927l10.6-10.6L69.18,46.046,46.048,69.174,63.272,86.4a5.452,5.452,0,0,0,7.711,0L86.4,70.979a5.452,5.452,0,0,0,0-7.711Z" transform="translate(9.01 6.01)" fill="#4448c9"/>
+  </g>
+</svg>
