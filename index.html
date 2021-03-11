@@ -17,13 +17,26 @@
                 <a href="#" class="logo">RF</a>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" class="nav-link active">Home</a></li>
+                        <li><a href="#about-me" class="nav-link">About Me</a></li>
+                        <li><a href="#my-skills" class="nav-link">My Skills</a></li>
+                        <li><a href="#projects" class="nav-link">My Projects</a></li>
+                        <li><a href="#contact-me" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
+                <button class="btn" id='sidebar-btn'><i class="fas fa-bars"></i></button>
+                <div class="sidebar-container">
+                <button class="btn" id='sidebar-close'><i class="fas fa-times"></i></button>    
+                <br><br>
+                    <ul>
+                        <li><a href="#" class="nav-link active">Home</a></li>
+                        <li><a href="#about-me" class="nav-link">About Me</a></li>
+                        <li><a href="#my-skills" class="nav-link">My Skills</a></li>
+                        <li><a href="#projects" class="nav-link">My Projects</a></li>
+                        <li><a href="#contact-me" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                
             </header>
         </div>
     
@@ -32,7 +45,8 @@
                 <h1>Hello, my name is <span class="bold">Reinaldo Fundora</span></h1>
                 <h2>Web Developer & Designer</h2>
                 <br>
-                <button class="btn">View My Work</button>
+                <a class="btn" href="#projects">View My Work</a>
+                <br>
             </div>
         </div>
     </div>
@@ -40,16 +54,14 @@
     <div class="container">
 
         <section class="about-me" id='about-me'>
-            <div class="me-text">
-                <h1 class="section-title">About Me</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia voluptates dolor libero, cupiditate aspernatur.
+            <br><br>
+            <h1 class="section-title">About Me</h1>
+            <div class="about-me-container">
+                <p class="description" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia voluptates dolor libero, cupiditate aspernatur.
                     
-                Soluta eveniet officia praesentium eius, et repellat dignissimos dolorem dolorum architecto modi temporibus eaque! Molestiae dignissimos a similique officia nam deserunt labore distinctio dolores sit eum nihil mollitia aperiam quisquam expedita.
+                    Soluta eveniet officia praesentium eius, et repellat dignissimos dolorem dolorum architecto modi temporibus eaque! Molestiae dignissimos a similique officia nam deserunt labore distinctio dolores sit eum nihil mollitia aperiam quisquam expedita.
                 </p>
-            </div>
-            <div class="me-img">
                 <img class="profile-pic large" src="img/profile/rey.jpg" alt="">
-                <br>
                 <div class="social-media-container">
                     <ul>
                         <li><a href=""><i class="fab fa-github-square"></i></a></li>
@@ -64,66 +76,72 @@
         <section class="my-skills" id='my-skills'>
             <h1 class="section-title">My Skills</h1>
             <br><br>
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-title">
-                        <i class="fas fa-server"></i>
-                        <h4 class="card-title-text">Front-End Web Developer</h4>
+            <div class="carousel">
+                <button class="prev carousel-btn">&lt;</button>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-title">
+                            
+                            <i class="fas fa-laptop"></i>
+                            <h4 class="card-title-text">Front-End Web
+                                <br> Developer</h4>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-items">
+                            <ul>
+                                <li>HTML5 & CSS3</li>
+                                <li>Javascript ES6</li>
+                                <li>React JS</li>
+                                <li>Bootstrap</li>
+                                <li>Sass</li>
+                                <li>Materialize CSS</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="divider"></div>
-                    <div class="card-items">
-                        <ul>
-                            <li>HTML5 & CSS3</li>
-                            <li>Javascript ES6</li>
-                            <li>React JS</li>
-                            <li>Bootstrap & React-Bootstrap</li>
-                            <li>Sass</li>
-                            <li>Materialize CSS</li>
-                            <li>jQuery</li>
-                        </ul>
+
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-server"></i>
+                            <h4 class="card-title-text">Back-End Dev <br> & Other</h4>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-items">
+                            <ul>
+                                <li>Node JS & Express</li>
+                                <li>Firebase Suite</li>
+                                <li>Mongo DB</li>
+                                <li>Azure</li>
+                            </ul>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-items">
+                            <ul>
+                                <li>Git & Github</li>
+                                <li>NPM</li>
+                                <li>Shopify</li>
+                                <li>Wordpress</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title">
+                            
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h4 class="card-title-text">Web & Graphic <br> Design</h4>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-items">
+                            <ul>
+                                <li>Adobe XD</li>
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Illustrator</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="card-title">
-                        <i class="fas fa-pencil-ruler"></i>
-                        <h4 class="card-title-text">Back-End Dev & Other</h4>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="card-items">
-                        <ul>
-                            <li>Node JS & Express</li>
-                            <li>Firebase Suite</li>
-                            <li>Mongo DB</li>
-                            <li>Azure</li>
-                        </ul>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="card-items">
-                        <ul>
-                            <li>Git & Github</li>
-                            <li>NPM</li>
-                            <li>Shopify</li>
-                            <li>Wordpress</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-title">
-                        <i class="fas fa-laptop"></i>
-                        <h4 class="card-title-text">Web & Graphic Design</h4>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="card-items">
-                        <ul>
-                            <li>Adobe XD</li>
-                            <li>Adobe Photoshop</li>
-                            <li>Adobe Illustrator</li>
-                        </ul>
-                    </div>
-                </div>
-
+                <button class="next carousel-btn">&gt;</button>
             </div>
         </section>
 

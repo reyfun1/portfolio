@@ -14,6 +14,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,6 +42,10 @@ section {
   overflow: hidden;
 }
 
+.about-me {
+  padding: 1rem 0;
+}
+
 .social-media-container ul {
   margin: 0 auto;
   padding: 0;
@@ -51,11 +56,12 @@ section {
   margin: 0 0.8rem;
 }
 .social-media-container i {
-  transition: color 0.5s;
+  transition: color 0.5s, transform 0.5s;
   font-size: 2.5rem;
 }
 .social-media-container i:hover {
   color: #FF461D;
+  transform: scale(1.05);
 }
 
 /*  =========================
@@ -105,7 +111,17 @@ h1, h2, h3, h4, h5, h6 {
 header {
   display: flex;
   justify-content: space-between;
-  margin-top: 2vh;
+  align-content: center;
+  margin: 0;
+  padding: 1.5vw 12vw 0 12vw;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background: #000918;
+  background: linear-gradient(180deg, black 33%, rgba(255, 255, 255, 0) 100%);
+  margin-left: -12vw;
+  margin-right: -12vw;
+  height: 11vh;
 }
 
 nav ul {
@@ -121,13 +137,13 @@ nav ul li {
 .nav-hero {
   background: url("../img/bg/hero-bg.jpg") rgba(0, 9, 24, 0.8);
   background-blend-mode: multiply;
-  padding: 0.5vw 12vw;
+  padding: 0 12vw 0.5vw 12vw;
   height: 75vh;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   background-origin: border-box;
 }
 
@@ -150,8 +166,32 @@ nav ul li {
   margin-right: -12vw;
 }
 
-.about-me {
-  display: flex;
+.description {
+  text-align: justify;
+}
+
+.contact-me {
+  text-align: center;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr 0.5fr;
+}
+.about-me-container .profile-pic {
+  margin: 0 auto;
+}
+.about-me-container .description {
+  display: block;
+  margin: 0 auto;
+  padding: 0 1rem;
+  grid-row: 1/3;
+  margin: auto 0;
+}
+.about-me-container .social-media-container {
+  grid-column: 2/4;
+  margin: auto 0;
 }
 
 /*  =====================
@@ -160,6 +200,7 @@ nav ul li {
     =====================
 */
 .btn {
+  display: inline-block;
   background-color: #FF461D;
   border-radius: 25px;
   padding: 1rem 2rem;
@@ -168,20 +209,19 @@ nav ul li {
   cursor: pointer;
   font-size: 1rem;
   outline: none;
-  transition: all 0.4s;
+  transition: transform 0.4s;
 }
 .btn:hover {
   background-color: #ff6744;
-  transform: scale(1.09);
+  transform: scale(1.05);
 }
 
 .profile-pic.large {
-  max-width: 50%;
+  max-width: 250px;
   display: block;
   border-radius: 50%;
   transform: rotate(10deg);
   border: 5px solid #FF461D;
-  margin: 0 auto;
 }
 
 .divider {
@@ -199,19 +239,20 @@ nav ul li {
 .card-container {
   display: flex;
   justify-content: space-around;
+  transform: translateX(0px);
 }
 .card-container .card {
   background-color: rgba(96, 100, 122, 0.3);
   padding: 3rem 3rem;
+  margin: 0 1rem;
   border-radius: 65px;
   text-align: center;
-  width: 300px;
+  width: 350px;
   min-height: 650px;
   backdrop-filter: blur(15px);
 }
 .card-container .card .card-title .card-title-text {
   font-weight: 600;
-  white-space: nowrap;
 }
 .card-container .card .card-title i {
   font-size: 2.5rem;
@@ -258,8 +299,182 @@ nav ul li {
   border-radius: 15px;
 }
 
-.contact-me {
+.nav-link {
+  transition: border-bottom 0.5s, transform 0.5s;
+  padding: 0 0 0.5rem 0;
+  border-bottom: 3px solid transparent;
+  display: block;
+}
+.nav-link.active {
+  border-bottom: 3px solid #FF461D;
+}
+.nav-link:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.sidebar-container {
+  position: absolute;
+}
+
+.logo {
+  margin: 0.3rem 0;
+  font-size: 1.5rem;
+  display: block;
+}
+
+#sidebar-btn {
+  transform: translateX(30px);
+  margin: 0.3rem 0;
+  padding: 1rem;
+  height: 0.2rem;
+  background-color: #FF461D;
+  display: none;
+}
+#sidebar-btn i {
+  transform: translateY(-11px);
+}
+
+#sidebar-close {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  float: left;
+  padding: 1rem;
+  height: 0.2rem;
+  background-color: #FF461D;
+  display: block;
+}
+#sidebar-close i {
+  transform: translateY(-11px);
+}
+
+.sidebar-container {
+  transition: transform 0.5s ease-in-out;
+  width: 180px;
+  z-index: 15;
+  position: absolute;
+  background-color: #13161C;
+  padding: 1rem 2rem;
+  right: -180px;
+  top: 0;
+  height: 100vh;
+  text-align: right;
+  -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.4);
+}
+.sidebar-container .nav-link {
+  display: inline-block;
+  margin: 1.5rem 0;
+}
+.sidebar-container.active {
+  transform: translateX(-180px);
+}
+
+.carousel-btn {
+  display: none;
   text-align: center;
+  vertical-align: center;
+  background-color: #FF461D;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 45%;
+  z-index: 5;
+  font-size: 3rem;
+}
+.carousel-btn.prev {
+  left: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-shadow: 8px 1px 10px -1px rgba(0, 0, 0, 0.35);
+  box-shadow: 8px 1px 10px -1px rgba(0, 0, 0, 0.35);
+}
+.carousel-btn.next {
+  right: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-box-shadow: -8px 1px 10px -1px rgba(0, 0, 0, 0.35);
+  box-shadow: -8px 1px 10px -1px rgba(0, 0, 0, 0.35);
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    height: 12vh;
+  }
+
+  .my-skills {
+    padding: 4rem 4vw;
+  }
+
+  .carousel-btn {
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    outline: none;
+  }
+  .carousel-btn:hover {
+    opacity: 0.8;
+  }
+
+  .carousel {
+    position: relative;
+    width: 300px !important;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .card-container {
+    justify-content: start;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+  }
+  .card-container .card {
+    min-width: 300px;
+    display: block;
+    margin: 0;
+    padding: 0.5rem 2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav-hero {
+    height: 90vh;
+  }
+
+  #sidebar-btn {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .about-me-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+  }
+  .about-me-container .profile-pic {
+    margin: 1rem auto;
+    grid-row: 1/1;
+  }
+  .about-me-container .description {
+    display: block;
+    margin: 0 auto;
+    padding: 0 1rem;
+    grid-row: 2/2;
+    margin: auto 0;
+  }
+  .about-me-container .social-media-container {
+    grid-row: 3/3;
+    margin: auto 0;
+    grid-column: 1/1;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .nav-hero {
+    height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
