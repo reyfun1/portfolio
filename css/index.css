@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-title {
+  margin-top: 0;
   color: #FF461D;
   text-transform: uppercase;
   font-weight: 400;
@@ -97,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-desc {
   font-size: 0.8rem;
+  text-align: justify;
 }
 
 /*  ========================
@@ -171,7 +173,10 @@ nav ul li {
 }
 
 .contact-me {
+  background-color: #13161C;
   text-align: center;
+  margin-left: -12vw;
+  margin-right: -12vw;
 }
 
 .about-me-container {
@@ -263,7 +268,6 @@ nav ul li {
 }
 
 .projects {
-  background-color: #13161C;
   margin-left: -12vw;
   margin-right: -12vw;
   padding: 4rem 12vw;
@@ -274,29 +278,90 @@ nav ul li {
   outline: none;
   border: 0.5px solid transparent;
   border-radius: 5px;
-  padding: 0.5rem 1rem;
+  padding: 0rem 2rem;
+  vertical-align: center;
   margin: auto 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  white-space: nowrap;
+  color: rgba(224, 224, 224, 0.33);
 }
 .item-selector-header button.active {
-  border: 0.5px solid #FF461D;
+  border-color: #FF461D;
+  color: #fff;
 }
 .item-selector-header button:hover {
   background-color: rgba(96, 100, 122, 0.3);
 }
 
 .project {
+  border-bottom: 0.5px solid rgba(224, 224, 224, 0.33);
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin-bottom: 7rem;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+.project:nth-of-type(1) {
+  border-top: 0.5px solid rgba(224, 224, 224, 0.33);
+}
+.project:last-of-type {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0);
+}
+.project .project-text {
+  max-width: 50%;
+}
+.project .project-images {
+  margin: auto;
 }
 .project .project-images img {
-  max-width: 75%;
+  max-width: 90%;
+  max-height: 450px;
   display: block;
-  margin: 0 auto;
+  margin: auto;
   border-radius: 15px;
+}
+
+.technologies-used {
+  display: flex;
+  justify-content: space-evenly;
+}
+.technologies-used .technology {
+  margin: 0.5rem;
+  text-align: center;
+  line-height: 1px;
+}
+.technologies-used .technology i {
+  font-size: 1.8rem;
+  width: 30px;
+  height: 30px;
+}
+.technologies-used .technology p {
+  font-size: 0.8rem;
+}
+.technologies-used .technology svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.project-links {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.link {
+  margin: 0;
+  border: 1px solid grey;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.5rem 2.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, border-color 0.5s ease-in-out;
+}
+.link:hover {
+  background-color: #13161C;
+  border-color: #FF461D;
 }
 
 .nav-link {
@@ -397,6 +462,30 @@ nav ul li {
 }
 
 @media only screen and (max-width: 900px) {
+  .item-selector-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .item-selector-header button {
+    width: 50vw;
+    margin: 0.5rem auto;
+    padding: 0.5rem 2rem;
+  }
+
+  .project {
+    display: block;
+  }
+  .project .project-text {
+    max-width: 100%;
+  }
+  .project .project-images {
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+  .project .project-images img {
+    max-width: 100%;
+  }
+
   header {
     height: 12vh;
   }
@@ -437,8 +526,17 @@ nav ul li {
   }
 }
 @media only screen and (max-width: 800px) {
+  .technologies-used {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .nav-hero {
     height: 90vh;
+  }
+
+  .link {
+    padding: 0.5rem 1.5rem;
   }
 
   #sidebar-btn {

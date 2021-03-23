@@ -1,7 +1,11 @@
-const navLinks = document.querySelectorAll('.nav-link');
+const navLinks = document.querySelectorAll('.nav-link')
 const sidebarOpenBtn = document.querySelector('#sidebar-btn')
 const sidebarCloseBtn = document.querySelector('#sidebar-close')
 const sidebarContainer = document.querySelector('.sidebar-container')
+const sectionTitles = document.querySelectorAll('.section-title')
+const sections = document.querySelectorAll('.web-section')
+const projectSelectors = document.querySelectorAll('.item-selector-header button')
+
 
 // Navlink method to switch active
 navLinks.forEach(link =>{
@@ -89,5 +93,38 @@ widthMatch.addEventListener('change', function(mm) {
     cardIndex = 0
     changeCard()
 });
+
+
+
+/***** SCROLL NAVIGATION FUNCTIONALLITY  */
+function isSectionOnTheTop() {
+    // Grab the height and y position
+    sections.forEach((el, i) => {
+        const vHeight = window.innerHeight || document.documentElement.clientHeight
+        const yPositionInScreen = el.getBoundingClientRect().y
+        const yPercentage = yPositionInScreen / vHeight
+        // active range to be 0 => 40%
+        if(yPercentage >= 0 && yPercentage <= 0.40){
+            navLinks.forEach(navlink => navlink.classList.remove('active'))
+            document.querySelector(`.${el.id}-link`).classList.add('active')
+        }
+    })
+}
+window.addEventListener('scroll', ()=>{
+    isSectionOnTheTop()
+})
+
+
+
+/*******PROJECT SELECTOR FUNCTIONALITY */
+projectSelectors.forEach(btn =>{
+    btn.addEventListener('click', (e) => {
+        projectSelectors.forEach(navlink => navlink.classList.remove('active'))
+        e.target.classList.add('active')
+    })
+})
+
+
+
 
 

@@ -90,6 +90,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: bold;
 }
 .project-title{
+    margin-top: 0;
     color: $highlight-color-main;
     text-transform: uppercase;
     font-weight: 400;
@@ -103,6 +104,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .project-desc{
     font-size: .8rem;
+    text-align: justify;
 }
 /*  ========================
     3. Layout 
@@ -176,7 +178,10 @@ nav{
 }
 
 .contact-me{
+    background-color: $bg-dark;
     text-align: center;
+    margin-left: -12vw;
+    margin-right: -12vw;
 }
 
 .about-me-container{
@@ -279,7 +284,7 @@ nav{
 }
 
 .projects{
-    background-color: $bg-dark;
+
     margin-left: -12vw;
     margin-right: -12vw;
     padding: 4rem 12vw;
@@ -292,12 +297,19 @@ nav{
         outline: none;
         border: 0.5px solid transparent;
         border-radius: 5px;
-        padding: .5rem 1rem;
+        padding: 0rem 2rem;
+        vertical-align: center;
         margin: auto .5rem;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s ease-in-out,
+        border-color 0.3s ease-in-out,
+        color 0.3s ease-in-out;
+        white-space: nowrap;
+        color: rgba(224, 224, 224, 0.33);
+
         &.active{
-            border: 0.5px solid $highlight-color-main;
+            border-color: $highlight-color-main;
+            color: $text-color;
         }
         &:hover{
             background-color: $bg-glass;
@@ -305,20 +317,73 @@ nav{
     }
 }
 .project{
+    border-bottom: 0.5px solid rgba(224, 224, 224, 0.33);
     display: flex;
     justify-content: space-between;
     align-content: center;
-    margin-bottom: 7rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    // apply border to first element and remove from the last 
+    &:nth-of-type(1){
+        border-top: 0.5px solid rgba(224, 224, 224, 0.33);
+    }
+    &:last-of-type{
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0); ;
+    }
+    .project-text{
+        max-width: 50%;
+    }
     .project-images{
+        margin: auto;
         img{
-            max-width: 75%;
+            max-width: 90%;
+            max-height: 450px;
             display: block;
-            margin:  0 auto;
+            margin: auto;
             border-radius: 15px;
         }
     }
 }
+.technologies-used{
+    display: flex;
+    justify-content: space-evenly;
+    .technology{
+        margin: .5rem;
+        text-align: center;
+        line-height: 1px;
+        i{
+            font-size: 1.8rem;
+            width: 30px;
+            height: 30px;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+        svg{
+            width: 30px;
+            height: 30px;
+            fill: $text-color;
+        }
+    }
+}
+.project-links{
+    margin: 0 auto;
+    text-align: center;
+}
+.link{
+    margin: 0;
+    border: 1px solid grey;
+    font-weight: bold;
+    font-size: .9rem;
+    padding: .5rem 2.5rem;
+    border-radius: 5px ;
+    transition: background-color 0.3s ease-in-out,border-color 0.5s ease-in-out;
+    &:hover{
+        background-color: $bg-dark;
+        border-color: $highlight-color-main;
+    }
 
+}
 
 .nav-link{
     transition: border-bottom 0.5s, transform 0.5s;
@@ -436,6 +501,31 @@ nav{
 // Handle Responsive Cards 
 @media only screen and (max-width: 900px) {
 
+    .item-selector-header{
+        display: flex;
+        flex-direction: column;
+        button{
+            width: 50vw;
+            margin: .5rem auto;
+            padding: .5rem 2rem;
+        }
+
+    }
+
+    .project{
+        display: block;
+        .project-text{
+            max-width: 100%;
+        }
+        .project-images{
+            margin: 0;
+            margin-top: 2.5rem;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
     header{
         height: 12vh;
     }
@@ -479,8 +569,16 @@ nav{
 
 // Handle Responsive Navbar and About me Section 
 @media only screen and (max-width: 800px) {
+    .technologies-used{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .nav-hero{
         height: 90vh;
+    }
+
+    .link{
+        padding: 0.5rem 1.5rem;
     }
 
     #sidebar-btn{
