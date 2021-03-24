@@ -15,7 +15,9 @@ $highlight-color-main: #FF461D;
 $highlight-color-hover: #ff6744;
 $bg-overlay: rgba(0,9,24,.8);
 $bg-glass: rgba(96, 100, 122, 0.3);
-$bg-dark: #13161C;
+$bg-grey: #13161C;
+$bg-dark: #0c0e12;
+
 $text-color: #fff;
 
 * {
@@ -178,7 +180,7 @@ nav{
 }
 
 .contact-me{
-    background-color: $bg-dark;
+    //background-color: $bg-grey;
     text-align: center;
     margin-left: -12vw;
     margin-right: -12vw;
@@ -284,7 +286,7 @@ nav{
 }
 
 .projects{
-
+    background-color: $bg-dark;
     margin-left: -12vw;
     margin-right: -12vw;
     padding: 4rem 12vw;
