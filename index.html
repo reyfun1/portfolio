@@ -150,14 +150,15 @@
             <h1 class="section-title">My Projects</h1>
             <br>
             <div class="item-selector-header">
-                <button class="active" tab="All">All</button>
+                <button class="active" tab="all">All</button>
                 <button tab="web-development">Web Development</button>
                 <button tab="web-design">Web Design</button>
                 <button tab="graphic-design">Graphic Design</button>
+                <button tab="shopify">Shopify</button>
             </div>
             <br>
             <div class="item-selector-feed">
-                <div class="project" type="web-development">  
+                <div class="project active" type="web-development">  
                     <div class="project-text">
                         <h5 class="project-title">CRM Web App</h5>
                         <h4 class="project-url"><a href="">pla-crm-demo.web.app.com</a></h4>
@@ -202,12 +203,12 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="project-images">
-                        <img src="img/projects/crm-web-app/img1.PNG" alt="">
+                        <img class="active" src="img/projects/crm-web-app/img1.PNG" alt="">
+                        <img src="img/projects/crm-web-app/img2.PNG" alt="">
                     </div>
                 </div>
-                <div class="project" type="web-design">  
+                <div class="project active" type="web-design">  
                     <div class="project-text">
                         <h5 class="project-title">CRM Web App (Design)</h5>
                         <h4 class="project-url"><a href="">pla-crm-demo.web.app.com</a></h4>
@@ -229,10 +230,10 @@
                     </div>
                     
                     <div class="project-images">
-                        <img src="img/projects/crm-web-app/img1.PNG" alt="">
+                        <img class="active" src="img/projects/crm-web-app/img1.PNG" alt="">
                     </div>
                 </div>
-                <div class="project" type="graphic-design">  
+                <div class="project active" type="graphic-design">  
                     <div class="project-text">
                         <h5 class="project-title">Social Media Post</h5>
                         <p class="project-desc">Nunc ultrices lorem augue, at pellentesque justo auctor non. Sed et nibh congue, finibus risus sit amet, pulvinar dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse at ullamcorper mi. Proin sit amet convallis lacus. Curabitur id venenatis est. Vestibulum luctus sollicitudin accumsan.</p>
@@ -251,10 +252,10 @@
                         </div>
                     </div>
                     <div class="project-images">
-                        <img src="img/projects/graphic-design/img2.png" alt="">
+                        <img class="active" src="img/projects/graphic-design/img2.png" alt="">
                     </div>
                 </div>
-                <div class="project" type="shopify">  
+                <div class="project active" type="shopify">  
                     <div class="project-text">
                         <h5 class="project-title">Cigar Store (Shopify)</h5>
                         <h4 class="project-url"><a href="">pla-crm-demo.web.app.com</a></h4>
@@ -280,7 +281,8 @@
                     </div>
                     
                     <div class="project-images">
-                        <img src="img/projects/crm-web-app/img1.PNG" alt="">
+                        <img class="active" src="img/projects/shopify/img1.PNG" alt="">
+                        <img src="img/projects/shopify/img2.PNG" alt="">
                     </div>
                 </div>
             </div>
@@ -299,6 +301,21 @@
                 </ul>
             </div>
         </section>
+
+        <div class="modal">
+            <div class="modal-header">
+                <button class="close-btn modal-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="picture-feed">
+            </div>
+            <br>
+            <div class="modal-footer">
+                <button class="prev modal-btn">&lt;</button>
+                <div class="spacer"></div>
+                <button class="next modal-btn">&gt;</button>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>

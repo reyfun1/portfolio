@@ -5,7 +5,8 @@ const sidebarContainer = document.querySelector('.sidebar-container')
 const sectionTitles = document.querySelectorAll('.section-title')
 const sections = document.querySelectorAll('.web-section')
 const projectSelectors = document.querySelectorAll('.item-selector-header button')
-
+const projectsArr = document.querySelectorAll('.project')
+const modal = document.querySelector('.modal')
 
 // Navlink method to switch active
 navLinks.forEach(link =>{
@@ -119,10 +120,87 @@ window.addEventListener('scroll', ()=>{
 /*******PROJECT SELECTOR FUNCTIONALITY */
 projectSelectors.forEach(btn =>{
     btn.addEventListener('click', (e) => {
+        const clickedTabType = e.target.getAttribute('tab')
+    
+        // remove the active class from all the btns and add it to the clicked btn
         projectSelectors.forEach(navlink => navlink.classList.remove('active'))
         e.target.classList.add('active')
+
+        projectsArr.forEach(project => {
+            const projectType = project.getAttribute('type')
+            // if project has matching type, then add the show class 
+            if(projectType === clickedTabType){
+                project.classList.add('active')
+            }
+            // else if type is all, add active class
+            else if(clickedTabType === 'all') {
+                project.classList.add('active')
+            }
+            // else, remove the active class
+            else{
+                project.classList.remove('active')
+            }
+        })
     })
 })
+
+/*******MODAL FUNCTIONALITY */
+const modalFeed = document.querySelector('.modal .picture-feed')
+const modalClose = document.querySelector('.modal .close-btn')
+const modalNext = document.querySelector('.modal .next')
+const modalPrev = document.querySelector('.modal .prev')
+
+let modalIndex = 0;
+
+// Add event listener to all of the images under the projects
+document.querySelectorAll('.project .project-images img').forEach(img => {
+    img.addEventListener('click', e => {
+        // get parent of clicked target
+        const parent = e.target.parentElement
+
+        // move the inside of parent to the modal
+        modalFeed.innerHTML = parent.innerHTML
+
+        // make the modal active 
+        modal.classList.add('active')
+    })
+})
+
+modalClose.addEventListener('click', ()=>{
+    modal.classList.remove('active')
+})
+
+modalNext.addEventListener('click', ()=>{
+    changePictureInModal(1)
+})
+
+modalPrev.addEventListener('click', ()=>{
+    changePictureInModal(-1)
+})
+
+// loop each image and set active the image that has the index 
+function changePictureInModal(change){
+    modalIndex += change
+    const modalPictures = document.querySelectorAll('.modal .picture-feed img')
+    
+    //If number is out of bounds, correct it 
+    if(modalIndex > modalPictures.length - 1) modalIndex = 0
+    if(modalIndex < 0) modalIndex = modalPictures.length - 1
+
+    modalPictures.forEach( (img, arrindex) =>{
+        if(arrindex === modalIndex){
+            img.classList.add('active')
+        } else {
+            img.classList.remove('active')
+        }
+    })
+}
+
+
+
+
+
+
 
 
 
