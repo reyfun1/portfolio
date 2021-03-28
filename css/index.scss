@@ -91,11 +91,24 @@ h1,h2,h3,h4,h5,h6{
 .bold{
     font-weight: bold;
 }
+.projecti-title-container{
+    display: flex;
+    justify-content: space-between;
+}
 .project-title{
     margin-top: 0;
     color: $highlight-color-main;
-    text-transform: uppercase;
     font-weight: 400;
+    span{
+        font-weight: 200;
+    }
+}
+.project-category{
+    margin-top: 0;
+    font-weight: 200;
+    span{
+        font-size: 1rem;
+    }
 }
 .project-url a{
     font-weight: 600;
@@ -185,6 +198,7 @@ nav{
     margin-left: -12vw;
     margin-right: -12vw;
 }
+
 
 .about-me-container{
     display: grid;
@@ -299,7 +313,7 @@ nav{
         outline: none;
         border: 0.5px solid transparent;
         border-radius: 5px;
-        padding: 0rem 2rem;
+        padding: 1rem 2.5rem;
         vertical-align: center;
         margin: auto .5rem;
         cursor: pointer;
@@ -553,6 +567,9 @@ nav{
     }
 }
  
+#modal-pic-number{
+   text-align: center;
+}
 
 // Handle Responsive Cards 
 @media only screen and (max-width: 900px) {
@@ -565,6 +582,7 @@ nav{
             margin: .5rem auto;
             padding: .5rem 2rem;
         }
+        font-size: 1rem;
 
     }
 

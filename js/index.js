@@ -149,6 +149,7 @@ const modalFeed = document.querySelector('.modal .picture-feed')
 const modalClose = document.querySelector('.modal .close-btn')
 const modalNext = document.querySelector('.modal .next')
 const modalPrev = document.querySelector('.modal .prev')
+const modalPictureCounter = document.querySelector('#modal-pic-number')
 
 let modalIndex = 0;
 
@@ -160,6 +161,9 @@ document.querySelectorAll('.project .project-images img').forEach(img => {
 
         // move the inside of parent to the modal
         modalFeed.innerHTML = parent.innerHTML
+
+        // inser the html for the picture counter 
+        modalPictureCounter.innerHTML = `1/${parent.children.length}`
 
         // make the modal active 
         modal.classList.add('active')
@@ -190,6 +194,7 @@ function changePictureInModal(change){
     modalPictures.forEach( (img, arrindex) =>{
         if(arrindex === modalIndex){
             img.classList.add('active')
+            modalPictureCounter.innerHTML = `${arrindex + 1}/${modalPictureCounter.innerHTML.split('/')[1]}`
         } else {
             img.classList.remove('active')
         }

@@ -81,11 +81,26 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+.projecti-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .project-title {
   margin-top: 0;
   color: #FF461D;
-  text-transform: uppercase;
   font-weight: 400;
+}
+.project-title span {
+  font-weight: 200;
+}
+
+.project-category {
+  margin-top: 0;
+  font-weight: 200;
+}
+.project-category span {
+  font-size: 1rem;
 }
 
 .project-url a {
@@ -278,7 +293,7 @@ nav ul li {
   outline: none;
   border: 0.5px solid transparent;
   border-radius: 5px;
-  padding: 0rem 2rem;
+  padding: 1rem 2.5rem;
   vertical-align: center;
   margin: auto 0.5rem;
   cursor: pointer;
@@ -504,10 +519,15 @@ nav ul li {
   right: 0;
 }
 
+#modal-pic-number {
+  text-align: center;
+}
+
 @media only screen and (max-width: 900px) {
   .item-selector-header {
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
   }
   .item-selector-header button {
     width: 50vw;
