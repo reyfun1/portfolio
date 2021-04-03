@@ -13,13 +13,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  color: #fff;
+  color: white;
   scroll-behavior: smooth;
 }
 
 body {
   height: 100vh;
-  background-color: #000918;
+  background-color: #25262A;
   margin: 0;
 }
 
@@ -33,7 +33,7 @@ ul li {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 
 section {
@@ -60,7 +60,7 @@ section {
   font-size: 2.5rem;
 }
 .social-media-container i:hover {
-  color: #FF461D;
+  color: #70F3A5;
   transform: scale(1.05);
 }
 
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-title {
   margin-top: 0;
-  color: #FF461D;
+  color: #70F3A5;
   font-weight: 400;
 }
 .project-title span {
@@ -105,10 +105,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-url a {
   font-weight: 600;
-  transition: background-color 0.3s;
+  transition: color 0.3s;
 }
 .project-url a:hover {
-  color: #FF461D;
+  color: #70F3A5;
 }
 
 .project-desc {
@@ -152,7 +152,7 @@ nav ul li {
 }
 
 .nav-hero {
-  background: url("../img/bg/hero-bg-v2.jpg") rgba(0, 9, 24, 0.8);
+  background: url("../img/bg/hero-bg-v2.jpg") #2D2E32;
   background-blend-mode: multiply;
   padding: 0 12vw 0.5vw 12vw;
   height: 100vh;
@@ -170,7 +170,6 @@ nav ul li {
 }
 
 .my-skills {
-  background: url("../img/bg/regular-bg.jpg") rgba(0, 9, 24, 0.8);
   background-blend-mode: multiply;
   padding: 4rem 12vw;
   background-position: top;
@@ -191,6 +190,7 @@ nav ul li {
   text-align: center;
   margin-left: -12vw;
   margin-right: -12vw;
+  background-color: #2D2E32;
 }
 
 .about-me-container {
@@ -220,19 +220,20 @@ nav ul li {
 */
 .btn {
   display: inline-block;
-  background-color: #FF461D;
+  background-color: transparent;
+  border: 1px solid #70F3A5;
   border-radius: 25px;
   padding: 1rem 2rem;
-  color: #fff;
-  border: none;
+  color: white;
   cursor: pointer;
   font-size: 1rem;
   outline: none;
-  transition: transform 0.4s;
+  transition: transform 0.4s, background-color 0.4s, color 0.4s;
 }
 .btn:hover {
-  background-color: #ff6744;
+  background-color: #94f1ba;
   transform: scale(1.05);
+  color: black;
 }
 
 .profile-pic.large {
@@ -240,12 +241,12 @@ nav ul li {
   display: block;
   border-radius: 50%;
   transform: rotate(10deg);
-  border: 5px solid #FF461D;
+  border: 5px solid #70F3A5;
 }
 
 .divider {
-  border-bottom: 1px solid #FF461D;
-  margin: 1rem 0;
+  border-bottom: 1px solid #70F3A5;
+  margin: 0;
   width: 20%;
   float: none;
   display: inline-block;
@@ -261,8 +262,8 @@ nav ul li {
   transform: translateX(0px);
 }
 .card-container .card {
-  background-color: rgba(96, 100, 122, 0.3);
-  padding: 3rem 3rem;
+  background-color: #2D2E32;
+  padding: 1rem 1rem;
   margin: 0 1rem;
   border-radius: 65px;
   text-align: center;
@@ -278,11 +279,11 @@ nav ul li {
   margin: 1rem;
 }
 .card-container .card .card-items li {
-  margin: 1.5rem auto;
+  margin: 1rem auto;
 }
 
 .projects {
-  background-color: #0c0e12;
+  background-color: #25262A;
   margin-left: -12vw;
   margin-right: -12vw;
   padding: 4rem 12vw;
@@ -302,11 +303,11 @@ nav ul li {
   color: rgba(224, 224, 224, 0.33);
 }
 .item-selector-header button.active {
-  border-color: #FF461D;
-  color: #fff;
+  border-color: #70F3A5;
+  color: white;
 }
 .item-selector-header button:hover {
-  background-color: rgba(96, 100, 122, 0.3);
+  background-color: #2D2E32;
 }
 
 .project {
@@ -333,8 +334,8 @@ nav ul li {
   cursor: pointer;
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
-  max-width: 35vw;
-  max-height: 35vh;
+  max-width: 30vw;
+  max-height: 66vh;
   margin: auto;
   border-radius: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -362,6 +363,7 @@ nav ul li {
   margin: 0.5rem;
   text-align: center;
   line-height: 1px;
+  transition: transform 0.4s;
 }
 .technologies-used .technology i {
   font-size: 1.8rem;
@@ -374,7 +376,10 @@ nav ul li {
 .technologies-used .technology svg {
   width: 30px;
   height: 30px;
-  fill: #fff;
+  fill: white;
+}
+.technologies-used .technology:hover {
+  transform: scale(1.1);
 }
 
 .project-links {
@@ -389,11 +394,18 @@ nav ul li {
   font-size: 0.9rem;
   padding: 0.5rem 2.5rem;
   border-radius: 5px;
-  transition: background-color 0.3s ease-in-out, border-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.link i {
+  transition: color 0.3s ease-in-out;
 }
 .link:hover {
-  background-color: #13161C;
-  border-color: #FF461D;
+  background-color: #70F3A5;
+  border-color: #70F3A5;
+  color: #2D2E32;
+}
+.link:hover i {
+  color: #2D2E32;
 }
 
 .nav-link {
@@ -404,7 +416,7 @@ nav ul li {
   white-space: nowrap;
 }
 .nav-link.active {
-  border-bottom: 3px solid #FF461D;
+  border-bottom: 3px solid #70F3A5;
 }
 .nav-link:hover {
   border-bottom: 3px solid #fff;
@@ -428,11 +440,12 @@ nav ul li {
   margin: 0.3rem 0;
   padding: 1rem;
   height: 0.2rem;
-  background-color: #FF461D;
+  background-color: #70F3A5;
   display: none;
 }
 #sidebar-btn i {
   transform: translateY(-11px);
+  color: #2D2E32;
 }
 
 #sidebar-close {
@@ -441,11 +454,12 @@ nav ul li {
   float: left;
   padding: 1rem;
   height: 0.2rem;
-  background-color: #FF461D;
+  background-color: #70F3A5;
   display: block;
 }
 #sidebar-close i {
   transform: translateY(-11px);
+  color: #2D2E32;
 }
 
 .sidebar-container {
@@ -453,7 +467,7 @@ nav ul li {
   width: 180px;
   z-index: 15;
   position: absolute;
-  background-color: #0c0e12;
+  background-color: #2D2E32;
   padding: 1rem 2rem;
   right: -180px;
   top: 0;
@@ -475,7 +489,8 @@ nav ul li {
   display: none;
   text-align: center;
   vertical-align: center;
-  background-color: #FF461D;
+  background-color: #70F3A5;
+  color: #2D2E32;
   outline: none;
   border: none;
   position: absolute;
@@ -516,7 +531,7 @@ nav ul li {
   box-shadow: -8px 1px 10px -1px rgba(0, 0, 0, 0);
 }
 .overlay .carousel-btn:hover {
-  background-color: #FF461D;
+  background-color: #70F3A5;
 }
 .overlay .carousel-btn.expand {
   font-size: 1.5rem;
@@ -644,6 +659,18 @@ nav ul li {
 
   .overlay .carousel-btn {
     top: 35%;
+  }
+
+  .logo {
+    margin: 0.75rem;
+  }
+
+  .profile-pic.large {
+    border: 3px solid #70F3A5;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
   }
 }
 #test {

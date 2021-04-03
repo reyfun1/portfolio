@@ -10,15 +10,23 @@
     =====================
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-$bg-color-primary: #000918;
-$highlight-color-main: #FF461D;
-$highlight-color-hover: #ff6744;
-$bg-overlay: rgba(0,9,24,.8);
-$bg-glass: rgba(96, 100, 122, 0.3);
-$bg-grey: #13161C;
-$bg-dark: #0c0e12;
+// $bg-color-primary: #000918;
+// $highlight-color-main: #FF461D;
+// $highlight-color-hover: #ff6744;
+// $bg-overlay: rgba(0,9,24,.8);
+// $bg-glass: rgba(96, 100, 122, 0.3);
+// $bg-grey: #13161C;
+// $bg-dark: #0c0e12;
 
-$text-color: #fff;
+$bg-color-primary: #25262A;
+$highlight-color-main: #70F3A5;
+$highlight-color-hover: #94f1ba;
+$bg-overlay: #2D2E32;
+$bg-glass: #2D2E32;
+$bg-grey: #2D2E32;
+$bg-dark: #2D2E32;
+
+$text-color: rgb(255, 255, 255);
 
 * {
     box-sizing: border-box;
@@ -112,7 +120,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .project-url a{
     font-weight: 600;
-    transition: background-color 0.3s;
+    transition: color 0.3s;
     &:hover{
         color: $highlight-color-main;
     }
@@ -174,7 +182,7 @@ nav{
 }
 
 .my-skills{
-    background: url('../img/bg/regular-bg.jpg') $bg-overlay;
+    //background: url('../img/bg/regular-bg.jpg') $bg-overlay;
     background-blend-mode: multiply;
     padding: 4rem 12vw;
     background-position: top;
@@ -197,6 +205,7 @@ nav{
     text-align: center;
     margin-left: -12vw;
     margin-right: -12vw;
+    background-color: $bg-dark;
 }
 
 
@@ -230,18 +239,19 @@ nav{
 */
 .btn{
     display: inline-block;
-    background-color: $highlight-color-main;
+    background-color: transparent;
+    border: 1px solid $highlight-color-main;
     border-radius: 25px;
     padding: 1rem 2rem;
     color: $text-color;
-    border: none;
     cursor: pointer;
     font-size: 1rem;
     outline: none;
-    transition: transform 0.4s;
+    transition: transform 0.4s,background-color 0.4s,color 0.4s,;
     &:hover{
         background-color: $highlight-color-hover;
-        transform: scale(1.05)
+        transform: scale(1.05);
+        color: black;
     }
 }
 
@@ -255,7 +265,7 @@ nav{
 
 .divider{
     border-bottom: 1px solid $highlight-color-main;
-    margin: 1rem 0;
+    margin: 0;
     width: 20%;
     float: none;
     display: inline-block;
@@ -272,7 +282,7 @@ nav{
 
     .card{
         background-color: $bg-glass;
-        padding: 3rem 3rem;
+        padding: 1rem 1rem;
         margin: 0 1rem;
         border-radius: 65px;
         text-align: center;
@@ -291,7 +301,7 @@ nav{
         }
         .card-items{
             li{
-                margin: 1.5rem auto;
+                margin: 1rem auto;
             }
         }
     }
@@ -300,7 +310,7 @@ nav{
 }
 
 .projects{
-    background-color: $bg-dark;
+    background-color: $bg-color-primary;
     margin-left: -12vw;
     margin-right: -12vw;
     padding: 4rem 12vw;
@@ -367,8 +377,8 @@ nav{
             cursor: pointer;
             opacity: 1;
             transition: opacity 0.2s ease-in-out;
-            max-width: 35vw;
-            max-height: 35vh;
+            max-width: 30vw;
+            max-height: 66vh;
             margin: auto;
             border-radius: 15px;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
@@ -410,6 +420,10 @@ nav{
             height: 30px;
             fill: $text-color;
         }
+        transition: transform 0.4s; 
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 .project-links{
@@ -423,10 +437,18 @@ nav{
     font-size: .9rem;
     padding: .5rem 2.5rem;
     border-radius: 5px ;
-    transition: background-color 0.3s ease-in-out,border-color 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out,border-color 0.3s ease-in-out,color 0.3s ease-in-out;
+
+    i{
+        transition: color 0.3s ease-in-out
+    }
     &:hover{
-        background-color: $bg-grey;
+        background-color: $highlight-color-main;
         border-color: $highlight-color-main;
+        color: $bg-dark;
+        i{
+            color: $bg-dark;
+        }
     }
 
 }
@@ -468,7 +490,8 @@ nav{
     background-color: $highlight-color-main;
     display: none;
     i{
-        transform: translateY(-11px)
+        transform: translateY(-11px);
+        color: $bg-dark;
     }
 }
 
@@ -481,7 +504,8 @@ nav{
     background-color: $highlight-color-main;
     display: block;
     i{
-        transform: translateY(-11px)
+        transform: translateY(-11px);
+        color: $bg-grey;
     }
 }
 
@@ -522,6 +546,7 @@ nav{
     text-align: center;
     vertical-align: center;
     background-color: $highlight-color-main;
+    color: $bg-dark;
     outline: none;
     border: none;
     position: absolute;
@@ -704,6 +729,19 @@ nav{
         top: 35%;
     }
 
+    .logo{
+        margin: 0.75rem;
+    }
+
+    .profile-pic.large{
+        border: 3px solid $highlight-color-main;
+    }
+    .hero{
+        h2{
+            font-size: 1.3rem;
+        }
+    }
+
 }
 
 
@@ -796,3 +834,5 @@ nav{
 .spacer{
     width: 15%;
 }
+
+
