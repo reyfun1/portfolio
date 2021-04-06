@@ -335,10 +335,10 @@ nav ul li {
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
   max-width: 30vw;
-  max-height: 66vh;
+  max-height: 35vh;
   margin: auto;
   border-radius: 15px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 .project .project-images img:hover {
   opacity: 0.65;
