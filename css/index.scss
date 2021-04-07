@@ -33,7 +33,7 @@ $text-color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: $text-color;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 body { 
     height: 100vh;
@@ -147,8 +147,12 @@ header{
     position: fixed;
     z-index: 10;
     width: 100%;
-    background: rgb(0,9,24);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 33%, rgba(255,255,255,0) 100%);
+    background: black;
+    background: -moz-linear-gradient(180deg, black 33%, transparent 100%);
+    background: -webkit-linear-gradient(180deg, black 33%, transparent 100%);
+    background: linear-gradient(180deg, black 33%, transparent 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000918",endColorstr="#ffffff",GradientType=1);
+
     margin-left: -12vw;
     margin-right: -12vw;
     height: 11vh;
@@ -239,7 +243,7 @@ nav{
 */
 .btn{
     display: inline-block;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0);
     border: 1px solid $highlight-color-main;
     border-radius: 25px;
     padding: 1rem 2rem;
@@ -319,9 +323,9 @@ nav{
 
 .item-selector-header{
     button{
-        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0);
         outline: none;
-        border: 0.5px solid transparent;
+        border: 0.5px solid rgba(255, 255, 255, 0);
         border-radius: 5px;
         padding: 1rem 2.5rem;
         vertical-align: center;
@@ -456,7 +460,7 @@ nav{
 .nav-link{
     transition: border-bottom 0.5s, transform 0.5s;
     padding: 0 0 0.5rem 0;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
     display: block;
     white-space: nowrap;
 
@@ -544,7 +548,6 @@ nav{
 .carousel-btn{
     display: none;
     text-align: center;
-    vertical-align: center;
     background-color: $highlight-color-main;
     color: $bg-dark;
     outline: none;
@@ -552,6 +555,7 @@ nav{
     position: absolute;
     top: 45%;
     z-index: 5;
+    padding: 0.6rem;
     &.prev{
         left: 0;
         border-top-right-radius: 15px;
@@ -566,7 +570,7 @@ nav{
         -webkit-box-shadow: -8px 1px 10px -1px rgba(0,0,0,0.35); 
         box-shadow: -8px 1px 10px -1px rgba(0,0,0,0.35);
     }
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .overlay{
@@ -600,6 +604,87 @@ nav{
    text-align: center;
 }
 
+
+.modal{
+    display: none;
+    &.active{
+        display: block;
+    }
+    position: fixed;
+    z-index:  10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+    //padding-top: 1.5rem;
+
+
+    .picture-feed{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    img{
+        object-fit: cover;
+        padding: 0.5rem;
+
+        max-height: 85vh;
+
+
+        display: none;
+        &:hover{
+            opacity: 1 !important;
+        }
+        &.active{
+            display: block;
+        }
+    }
+
+    .modal-header{
+        .close-btn{
+            border: none;
+            padding: .5rem 1rem;
+            width: auto;
+            right: 5%;
+            top: 2%;
+            position: absolute;
+            i{
+                color: white;
+            }
+        }
+    }
+
+    .modal-btn{
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        border: 1px solid  white;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: .25rem 1rem;
+        &:hover{
+            color: gray;
+            i{
+                color: grey;
+            }
+        }
+    }
+
+    .modal-footer{
+        display: flex;
+        justify-content: center;
+        // position: absolute;
+        // bottom: 10px;
+        // left: 50vw;
+    }
+    
+
+}
+
+
 // Handle Responsive Cards 
 @media only screen and (max-width: 900px) {
 
@@ -610,9 +695,8 @@ nav{
             width: 50vw;
             margin: .5rem auto;
             padding: .5rem 2rem;
+            font-size: 0.8rem;
         }
-        font-size: 1rem;
-
     }
 
     .project{
@@ -630,7 +714,7 @@ nav{
     }
 
     header{
-        height: 12vh;
+        height: 10vh;
     }
 
     .my-skills{
@@ -716,11 +800,13 @@ nav{
             grid-column: 1/1;
         }
     }
+
+
     
 }
 
 // Handle phone sizes 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
     .nav-hero{
         height: 100vh;
     }
@@ -730,7 +816,12 @@ nav{
     }
 
     .logo{
-        margin: 0.75rem;
+        position: absolute;
+        top: 15px;
+    }
+
+    header{
+        height: 9vh;
     }
 
     .profile-pic.large{
@@ -741,6 +832,12 @@ nav{
             font-size: 1.3rem;
         }
     }
+
+    .modal img{
+        height: 100%;
+        width: 100vw;
+    }
+
 
 }
 
@@ -756,80 +853,6 @@ nav{
     height: 90vh;
 }
     
-
-.modal{
-    display: none;
-    &.active{
-        display: block;
-    }
-    position: fixed;
-    z-index:  10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.90);
-    //padding-top: 1.5rem;
-
-
-    .picture-feed{
-        margin-top: 3rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    img{
-        max-height: 80vh !important;
-        max-width: 95vw;
-        display: none;
-        &:hover{
-            opacity: 1 !important;
-        }
-        &.active{
-            display: block;
-        }
-    }
-
-    .modal-header{
-        .close-btn{
-            border: none;
-            padding: .5rem 1rem;
-            width: auto;
-            right: 5%;
-            top: 2%;
-            position: absolute;
-            i{
-                color: white;
-            }
-        }
-    }
-
-    .modal-btn{
-        background-color: transparent;
-        color: white;
-        border: 1px solid  white;
-        border-radius: 5px;
-        outline: none;
-        cursor: pointer;
-        font-size: 1.5rem;
-        width: 15%;
-        padding: .5rem 1rem;
-
-        &:hover{
-            color: gray;
-            i{
-                color: grey;
-            }
-        }
-    }
-
-    .modal-footer{
-        display: flex;
-        justify-content: center;
-    }
-    
-
-}
 
 .spacer{
     width: 15%;

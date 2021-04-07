@@ -134,8 +134,11 @@ header {
   position: fixed;
   z-index: 10;
   width: 100%;
-  background: #000918;
-  background: linear-gradient(180deg, black 33%, rgba(255, 255, 255, 0) 100%);
+  background: black;
+  background: -moz-linear-gradient(180deg, black 33%, transparent 100%);
+  background: -webkit-linear-gradient(180deg, black 33%, transparent 100%);
+  background: linear-gradient(180deg, black 33%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000918",endColorstr="#ffffff",GradientType=1);
   margin-left: -12vw;
   margin-right: -12vw;
   height: 11vh;
@@ -220,7 +223,7 @@ nav ul li {
 */
 .btn {
   display: inline-block;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   border: 1px solid #70F3A5;
   border-radius: 25px;
   padding: 1rem 2rem;
@@ -290,9 +293,9 @@ nav ul li {
 }
 
 .item-selector-header button {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   outline: none;
-  border: 0.5px solid transparent;
+  border: 0.5px solid rgba(255, 255, 255, 0);
   border-radius: 5px;
   padding: 1rem 2.5rem;
   vertical-align: center;
@@ -411,7 +414,7 @@ nav ul li {
 .nav-link {
   transition: border-bottom 0.5s, transform 0.5s;
   padding: 0 0 0.5rem 0;
-  border-bottom: 3px solid transparent;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
   display: block;
   white-space: nowrap;
 }
@@ -488,7 +491,6 @@ nav ul li {
 .carousel-btn {
   display: none;
   text-align: center;
-  vertical-align: center;
   background-color: #70F3A5;
   color: #2D2E32;
   outline: none;
@@ -496,7 +498,8 @@ nav ul li {
   position: absolute;
   top: 45%;
   z-index: 5;
-  font-size: 3rem;
+  padding: 0.6rem;
+  font-size: 2.5rem;
 }
 .carousel-btn.prev {
   left: 0;
@@ -543,16 +546,78 @@ nav ul li {
   text-align: center;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.modal.active {
+  display: block;
+}
+.modal .picture-feed {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.modal img {
+  object-fit: cover;
+  padding: 0.5rem;
+  max-height: 85vh;
+  display: none;
+}
+.modal img:hover {
+  opacity: 1 !important;
+}
+.modal img.active {
+  display: block;
+}
+.modal .modal-header .close-btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  width: auto;
+  right: 5%;
+  top: 2%;
+  position: absolute;
+}
+.modal .modal-header .close-btn i {
+  color: white;
+}
+.modal .modal-btn {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
+}
+.modal .modal-btn:hover {
+  color: gray;
+}
+.modal .modal-btn:hover i {
+  color: grey;
+}
+.modal .modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 900px) {
   .item-selector-header {
     display: flex;
     flex-direction: column;
-    font-size: 1rem;
   }
   .item-selector-header button {
     width: 50vw;
     margin: 0.5rem auto;
     padding: 0.5rem 2rem;
+    font-size: 0.8rem;
   }
 
   .project {
@@ -570,7 +635,7 @@ nav ul li {
   }
 
   header {
-    height: 12vh;
+    height: 10vh;
   }
 
   .my-skills {
@@ -652,7 +717,7 @@ nav ul li {
     grid-column: 1/1;
   }
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
   .nav-hero {
     height: 100vh;
   }
@@ -662,7 +727,12 @@ nav ul li {
   }
 
   .logo {
-    margin: 0.75rem;
+    position: absolute;
+    top: 15px;
+  }
+
+  header {
+    height: 9vh;
   }
 
   .profile-pic.large {
@@ -671,6 +741,11 @@ nav ul li {
 
   .hero h2 {
     font-size: 1.3rem;
+  }
+
+  .modal img {
+    height: 100%;
+    width: 100vw;
   }
 }
 #test {
@@ -682,68 +757,6 @@ nav ul li {
   bottom: 0;
   width: 90vw;
   height: 90vh;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-.modal.active {
-  display: block;
-}
-.modal .picture-feed {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-}
-.modal img {
-  max-height: 80vh !important;
-  max-width: 95vw;
-  display: none;
-}
-.modal img:hover {
-  opacity: 1 !important;
-}
-.modal img.active {
-  display: block;
-}
-.modal .modal-header .close-btn {
-  border: none;
-  padding: 0.5rem 1rem;
-  width: auto;
-  right: 5%;
-  top: 2%;
-  position: absolute;
-}
-.modal .modal-header .close-btn i {
-  color: white;
-}
-.modal .modal-btn {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  width: 15%;
-  padding: 0.5rem 1rem;
-}
-.modal .modal-btn:hover {
-  color: gray;
-}
-.modal .modal-btn:hover i {
-  color: grey;
-}
-.modal .modal-footer {
-  display: flex;
-  justify-content: center;
 }
 
 .spacer {
