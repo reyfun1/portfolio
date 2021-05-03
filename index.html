@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js" defer></script>
+    <script src="js/index.js" defer async></script>
     <title>Reinaldo Fundora | Web Developer</title>
 </head>
 <body>
@@ -24,9 +24,9 @@
                         <li><a href="#contact-me" class="nav-link contact-me-link">Contact</a></li>
                     </ul>
                 </nav>
-                <button class="btn" id='sidebar-btn'><i class="fas fa-bars"></i></button>
+                <button name="open-sidebar" class="btn" id='sidebar-btn'><i class="fas fa-bars"></i></button>
                 <div class="sidebar-container">
-                <button class="btn" id='sidebar-close'><i class="fas fa-times"></i></button>    
+                <button name="close-sidebar" class="btn" id='sidebar-close'><i class="fas fa-times"></i></button>    
                 <br><br>
                     <ul>
                         <li><a href="#" class="nav-link active">Home</a></li>
@@ -57,17 +57,13 @@
             <br><br>
             <h1 class="section-title">About Me</h1>
             <div class="about-me-container">
-                <p class="description" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia voluptates dolor libero, cupiditate aspernatur.
-                    
-                    Soluta eveniet officia praesentium eius, et repellat dignissimos dolorem dolorum architecto modi temporibus eaque! Molestiae dignissimos a similique officia nam deserunt labore distinctio dolores sit eum nihil mollitia aperiam quisquam expedita.
-                </p>
-                <img class="profile-pic large" src="img/profile/rey-min.jpg" alt="Profile picture of Reinaldo Fundora">
+                <p class="description">Test234</p>
+                <img class="profile-pic large" src="img/profile/rey-400.jpg" alt="Profile picture of Reinaldo Fundora">
                 <div class="social-media-container">
                     <ul>
-                        <li><a href=""><i class="fab fa-github-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a target="_blank" href="https://github.com/reyfun1/"><i class="fab fa-github-square"></i> <br><span>@reyfun1</span></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/reinaldo-fundora"><i class="fab fa-linkedin"></i><br><span>@reyfun1</span></a></li>
+                        <li><a target="_blank" href=""><i class="fab fa-twitter-square"></i><br><span>@reyfun1</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -160,7 +156,7 @@
                 <div class="project active" type="web-development">  
                     <div class="project-text">
                         <h4 class="project-title">CRM Web App - <span>Web Development</span></h4>
-                        <h4 class="project-url"><a href="https://crm-web-demo.web.app/" target="_blank">crm-web-demo.web.app</a></h4>
+                        <h4 class="project-url"><a href="https://crm-web-demo.web.app/" target="_blank" rel="noreferrer">crm-web-demo.web.app</a></h4>
                         <p class="project-desc">This is a CRM (Customer Relationship Manager) App built for Plasencia Cigars. They currently use it to manage thier accounts. The app contains information about the accounts such as invoices, sales info, contact info. It also has the ability for users to submit orders for these acccounts, as well as notes so other sales representative can follow up and be aweare of the current status of an account. This app also communicates with Quickbooks accounting software and transfers data automatically throgh the day.
                             <br><br>It was built with React and the Firebase Suite (Firestore, Cloud Functions & Google Auth) </p>
                         <br>
@@ -197,14 +193,14 @@
                             </div>
                             <br><br>
                             <div class="project-links">
-                                <a href="https://crm-web-demo.web.app/" class="link" target="_blank">Live Demo &nbsp<i class="fas fa-external-link-square-alt"></i></a>
+                                <a href="https://crm-web-demo.web.app/" class="link" target="_blank" rel="noreferrer">Live Demo &nbsp<i class="fas fa-external-link-square-alt"></i></a>
                                 &nbsp
                                 <a href="#" class="link">Github <i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-images">
-                        <img class="active" src="img/projects/crm-web-app/accountpage.PNG" alt="CRM Web App Account Page Screen Shot">
+                        <img minVersion="accountpage-min" assetType="crm-web-app" class="active" src="img/projects/crm-web-app/accountpage-500.jpg" alt="CRM Web App Account Page Screen Shot">
                         <img src="img/projects/crm-web-app/addnote.PNG" alt="CRM Web App New Note Page Screen Shot">
                         <img src="img/projects/crm-web-app/notefeed.PNG" alt="CRM Web App Note Feed Page Screen Shot">
                         <img src="img/projects/crm-web-app/orderfeed.PNG" alt="CRM Web App Order Feed Page Screen Shot">
@@ -244,7 +240,7 @@
                 <div class="project active" type="shopify">  
                     <div class="project-text">
                         <h4 class="project-title">Brother's Cigars <span> - Shopify</span></h4>
-                        <h4 class="project-url"><a href="">brotherscigar.com</a></h4>
+                        <h4 class="project-url"><a href="https://brotherscigar.com" rel="noreferrer">brotherscigar.com</a></h4>
                         <p class="project-desc">I built this e-commerce store using shopify's engine, I also edited the CSS and Javascript of the theme template to meet the expectatiions of my clients </p>
                         <br>
                         <div class="project-footer">
@@ -265,12 +261,12 @@
                             <br><br>
                         </div>
                         <div class="project-links">
-                            <a href="https://brotherscigar.com" class="link" target="_blank">Production Link &nbsp<i class="fas fa-external-link-square-alt"></i></a>
+                            <a href="https://brotherscigar.com" class="link" target="_blank" rel="noreferrer" >Production Link &nbsp<i class="fas fa-external-link-square-alt"></i></a>
                         </div>
                     </div>
                     
                     <div class="project-images">
-                        <img class="active" src="img/projects/shopify/home-screen-min.png" alt="Brother's Cigars Shopify Project Home Screen">
+                        <img minVersion="home-screen-min" assetType="shopify" class="active" src="img/projects/shopify/home-screen-500.jpg" alt="Brother's Cigars Shopify Project Home Screen">
                         <img src="img/projects/shopify/catalog-screen-min.PNG" alt="Brother's Cigars Shopify Project Catalog Screen">
                         <img src="img/projects/shopify/mobile-screen-min.PNG" alt="Brother's Cigars Shopify Project Mobile Home Screen">
                     </div>
@@ -294,7 +290,7 @@
                         </div>
                     </div>
                     <div class="project-images">
-                        <img class="active" src="img/projects/graphic-design/booth-promo-min.png" alt="Graphic Design - Booth Attention Promo Ad">
+                        <img minVersion="booth-promo-min" assetType="graphic-design" class="active" src="img/projects/graphic-design/booth-promo-500.jpg" alt="Graphic Design - Booth Attention Promo Ad">
                     </div>
                 </div>
                 <div class="project active" type="graphic-design">  
@@ -316,7 +312,7 @@
                         </div>
                     </div>
                     <div class="project-images">
-                        <img class="active" src="img/projects/graphic-design/no1-cigar-promo-min.jpeg" alt="Graphic Design - No. 1 Promo Ad">
+                        <img minVersion="no1-cigar-promo-min" assetType="graphic-design" class="active" src="img/projects/graphic-design/no1-cigar-promo-500.jpg" alt="Graphic Design - No. 1 Promo Ad">
                     </div>
                 </div>
                 <div class="project active" type="graphic-design">  
@@ -338,7 +334,7 @@
                         </div>
                     </div>
                     <div class="project-images">
-                        <img class="active" src="img/projects/graphic-design/galaxy-motorcycle-min.jpg" alt="Graphic Design - Galaxy Theme - Motorcycle">
+                        <img minVersion="galaxy-motorcycle-min" assetType="graphic-design" class="active" src="img/projects/graphic-design/galaxy-motorcycle-500.jpg" alt="Graphic Design - Galaxy Theme - Motorcycle">
                     </div>
                 </div>
                 <div class="project active" type="graphic-design">  
@@ -360,7 +356,7 @@
                         </div>
                     </div>
                     <div class="project-images">
-                        <img class="active" src="img/projects/graphic-design/galaxy-airplane-min.jpg" alt="Graphic Design - Galaxy Theme - Airplane">
+                        <img minVersion="galaxy-airplane-min" assetType="graphic-design" class="active" src="img/projects/graphic-design/galaxy-airplane-500.jpg" alt="Graphic Design - Galaxy Theme - Airplane">
                     </div>
                 </div>
                 <div class="project active" type="graphic-design">  
@@ -382,7 +378,7 @@
                         </div>
                     </div>
                     <div class="project-images">
-                        <img class="active" src="img/projects/graphic-design/galaxy-binoculars-min.jpg" alt="Graphic Design - Galaxy Theme - Binoculars">
+                        <img minVersion="galaxy-binoculars-min" assetType="graphic-design" class="active" src="img/projects/graphic-design/galaxy-binoculars-500.jpg" alt="Graphic Design - Galaxy Theme - Binoculars">
                     </div>
                 </div>
                 <div class="project active" type="graphic-design">  
@@ -404,7 +400,7 @@
                         </div>
                     </div>
                     <div class="project-images">
-                        <img class="active" src="img/projects/graphic-design/brotherscigars-design-min.jpg">
+                        <img minVersion="brotherscigars-design-min" assetType="graphic-design" class="active" src="img/projects/graphic-design/brotherscigars-design-500.jpg" alt="Graphic Design - Cigar Brand Design">
                     </div>
                 </div>
             </div>
@@ -416,10 +412,9 @@
             <p>reifundora@gmail.com</p>
             <div class="social-media-container">
                 <ul>
-                    <li><a href=""><i class="fab fa-github-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/reyfun1/"><i class="fab fa-github-square"></i> <br><span>@reyfun1</span></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/reinaldo-fundora"><i class="fab fa-linkedin"></i><br><span>@reyfun1</span></a></li>
+                    <li><a target="_blank" href=""><i class="fab fa-twitter-square"></i><br><span>@reyfun1</span></a></li>
                 </ul>
             </div>
         </section>

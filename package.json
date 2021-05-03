@@ -19,5 +19,8 @@
   "homepage": "https://github.com/reyfun1/portfolio#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "parcel-plugin-inlinesvg": "^0.1.1"
   }
 }

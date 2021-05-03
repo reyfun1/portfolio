@@ -1,3 +1,5 @@
+import imgAssets from "../img/projects/**/*.jpg";
+
 const navLinks = document.querySelectorAll('.nav-link')
 const sidebarOpenBtn = document.querySelector('#sidebar-btn')
 const sidebarCloseBtn = document.querySelector('#sidebar-close')
@@ -158,6 +160,20 @@ document.querySelectorAll('.project .project-images img').forEach(img => {
     img.addEventListener('click', e => {
         // get parent of clicked target
         const parent = e.target.parentElement
+
+        // select the minified img element
+        const minImageEl = parent.querySelector('[minVersion]')
+
+        // extract the file name of the min file
+        const fileName = minImageEl.getAttribute('minVersion')
+        const assetType = minImageEl.getAttribute('assetType')
+
+        console.log(assetType,fileName)
+        console.log(imgAssets)
+        console.log(imgAssets[assetType][fileName])
+
+        // change the src of the image to the new filename 
+        minImageEl.src = imgAssets[assetType][fileName]
 
         // move the inside of parent to the modal
         modalFeed.innerHTML = parent.innerHTML

@@ -73,9 +73,12 @@ section{
             margin: 0 0.8rem;
         }
     }
+    span{
+        font-size: 0.75rem;
+    }
     i{
         transition: color 0.5s, transform 0.5s;
-        font-size: 2.5rem;
+        font-size: 2rem;
         &:hover{
             color: $highlight-color-main;
             transform: scale(1.05);
@@ -169,7 +172,7 @@ nav{
     }
 }
 .nav-hero{
-    background: url('../img/bg/hero-bg-v2-min.jpg') $bg-overlay;
+    background: url('../img/bg/hero-bg-v2-1400.jpg') $bg-overlay;
     background-blend-mode: multiply;
     padding: 0 12vw 0.5vw 12vw;
     height: 100vh;
@@ -232,7 +235,8 @@ nav{
     
     .social-media-container{
         grid-column: 2 / 4;
-        margin: auto 0;
+        margin: auto 0 ;
+        text-align: center;
     }
 }
 
@@ -335,7 +339,7 @@ nav{
         border-color 0.3s ease-in-out,
         color 0.3s ease-in-out;
         white-space: nowrap;
-        color: rgba(224, 224, 224, 0.33);
+        //color: rgba(224, 224, 224, 0.33);
 
         &.active{
             border-color: $highlight-color-main;
@@ -857,5 +861,4 @@ nav{
 .spacer{
     width: 15%;
 }
-
 
