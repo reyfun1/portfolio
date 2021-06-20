@@ -141,40 +141,40 @@ module.exports = "/galaxy-airplane-min.d06f0b43.jpg";
 module.exports = "/galaxy-binoculars-500.9999dabf.jpg";
 },{}],"img/projects/graphic-design/galaxy-binoculars-min.jpg":[function(require,module,exports) {
 module.exports = "/galaxy-binoculars-min.4e2b31af.jpg";
-},{}],"img/projects/graphic-design/galaxy-motorcycle-min.jpg":[function(require,module,exports) {
-module.exports = "/galaxy-motorcycle-min.a1df69b5.jpg";
 },{}],"img/projects/graphic-design/galaxy-motorcycle-500.jpg":[function(require,module,exports) {
 module.exports = "/galaxy-motorcycle-500.fe5f6827.jpg";
-},{}],"img/projects/graphic-design/no1-cigar-promo-min.jpg":[function(require,module,exports) {
-module.exports = "/no1-cigar-promo-min.41d3137a.jpg";
+},{}],"img/projects/graphic-design/galaxy-motorcycle-min.jpg":[function(require,module,exports) {
+module.exports = "/galaxy-motorcycle-min.a1df69b5.jpg";
 },{}],"img/projects/graphic-design/no1-cigar-promo-500.jpg":[function(require,module,exports) {
 module.exports = "/no1-cigar-promo-500.90a8874f.jpg";
+},{}],"img/projects/graphic-design/no1-cigar-promo-min.jpg":[function(require,module,exports) {
+module.exports = "/no1-cigar-promo-min.41d3137a.jpg";
 },{}],"img/projects/**/*.jpg":[function(require,module,exports) {
 module.exports = {
   "crm-web-app": {
-    "accountpage-500": require("./../crm-web-app/accountpage-500.jpg"),
-    "accountpage-min": require("./../crm-web-app/accountpage-min.jpg")
+    "accountpage-500": require("./..\\crm-web-app\\accountpage-500.jpg"),
+    "accountpage-min": require("./..\\crm-web-app\\accountpage-min.jpg")
   },
   "shopify": {
-    "home-screen-500": require("./../shopify/home-screen-500.jpg"),
-    "home-screen-min": require("./../shopify/home-screen-min.jpg")
+    "home-screen-500": require("./..\\shopify\\home-screen-500.jpg"),
+    "home-screen-min": require("./..\\shopify\\home-screen-min.jpg")
   },
   "graphic-design": {
-    "booth-promo-500": require("./../graphic-design/booth-promo-500.jpg"),
-    "booth-promo-min": require("./../graphic-design/booth-promo-min.jpg"),
-    "brotherscigars-design-500": require("./../graphic-design/brotherscigars-design-500.jpg"),
-    "brotherscigars-design-min": require("./../graphic-design/brotherscigars-design-min.jpg"),
-    "galaxy-airplane-500": require("./../graphic-design/galaxy-airplane-500.jpg"),
-    "galaxy-airplane-min": require("./../graphic-design/galaxy-airplane-min.jpg"),
-    "galaxy-binoculars-500": require("./../graphic-design/galaxy-binoculars-500.jpg"),
-    "galaxy-binoculars-min": require("./../graphic-design/galaxy-binoculars-min.jpg"),
-    "galaxy-motorcycle-min": require("./../graphic-design/galaxy-motorcycle-min.jpg"),
-    "galaxy-motorcycle-500": require("./../graphic-design/galaxy-motorcycle-500.jpg"),
-    "no1-cigar-promo-min": require("./../graphic-design/no1-cigar-promo-min.jpg"),
-    "no1-cigar-promo-500": require("./../graphic-design/no1-cigar-promo-500.jpg")
+    "booth-promo-500": require("./..\\graphic-design\\booth-promo-500.jpg"),
+    "booth-promo-min": require("./..\\graphic-design\\booth-promo-min.jpg"),
+    "brotherscigars-design-500": require("./..\\graphic-design\\brotherscigars-design-500.jpg"),
+    "brotherscigars-design-min": require("./..\\graphic-design\\brotherscigars-design-min.jpg"),
+    "galaxy-airplane-500": require("./..\\graphic-design\\galaxy-airplane-500.jpg"),
+    "galaxy-airplane-min": require("./..\\graphic-design\\galaxy-airplane-min.jpg"),
+    "galaxy-binoculars-500": require("./..\\graphic-design\\galaxy-binoculars-500.jpg"),
+    "galaxy-binoculars-min": require("./..\\graphic-design\\galaxy-binoculars-min.jpg"),
+    "galaxy-motorcycle-500": require("./..\\graphic-design\\galaxy-motorcycle-500.jpg"),
+    "galaxy-motorcycle-min": require("./..\\graphic-design\\galaxy-motorcycle-min.jpg"),
+    "no1-cigar-promo-500": require("./..\\graphic-design\\no1-cigar-promo-500.jpg"),
+    "no1-cigar-promo-min": require("./..\\graphic-design\\no1-cigar-promo-min.jpg")
   }
 };
-},{"./../crm-web-app/accountpage-500.jpg":"img/projects/crm-web-app/accountpage-500.jpg","./../crm-web-app/accountpage-min.jpg":"img/projects/crm-web-app/accountpage-min.jpg","./../shopify/home-screen-500.jpg":"img/projects/shopify/home-screen-500.jpg","./../shopify/home-screen-min.jpg":"img/projects/shopify/home-screen-min.jpg","./../graphic-design/booth-promo-500.jpg":"img/projects/graphic-design/booth-promo-500.jpg","./../graphic-design/booth-promo-min.jpg":"img/projects/graphic-design/booth-promo-min.jpg","./../graphic-design/brotherscigars-design-500.jpg":"img/projects/graphic-design/brotherscigars-design-500.jpg","./../graphic-design/brotherscigars-design-min.jpg":"img/projects/graphic-design/brotherscigars-design-min.jpg","./../graphic-design/galaxy-airplane-500.jpg":"img/projects/graphic-design/galaxy-airplane-500.jpg","./../graphic-design/galaxy-airplane-min.jpg":"img/projects/graphic-design/galaxy-airplane-min.jpg","./../graphic-design/galaxy-binoculars-500.jpg":"img/projects/graphic-design/galaxy-binoculars-500.jpg","./../graphic-design/galaxy-binoculars-min.jpg":"img/projects/graphic-design/galaxy-binoculars-min.jpg","./../graphic-design/galaxy-motorcycle-min.jpg":"img/projects/graphic-design/galaxy-motorcycle-min.jpg","./../graphic-design/galaxy-motorcycle-500.jpg":"img/projects/graphic-design/galaxy-motorcycle-500.jpg","./../graphic-design/no1-cigar-promo-min.jpg":"img/projects/graphic-design/no1-cigar-promo-min.jpg","./../graphic-design/no1-cigar-promo-500.jpg":"img/projects/graphic-design/no1-cigar-promo-500.jpg"}],"js/index.js":[function(require,module,exports) {
+},{"./..\\crm-web-app\\accountpage-500.jpg":"img/projects/crm-web-app/accountpage-500.jpg","./..\\crm-web-app\\accountpage-min.jpg":"img/projects/crm-web-app/accountpage-min.jpg","./..\\shopify\\home-screen-500.jpg":"img/projects/shopify/home-screen-500.jpg","./..\\shopify\\home-screen-min.jpg":"img/projects/shopify/home-screen-min.jpg","./..\\graphic-design\\booth-promo-500.jpg":"img/projects/graphic-design/booth-promo-500.jpg","./..\\graphic-design\\booth-promo-min.jpg":"img/projects/graphic-design/booth-promo-min.jpg","./..\\graphic-design\\brotherscigars-design-500.jpg":"img/projects/graphic-design/brotherscigars-design-500.jpg","./..\\graphic-design\\brotherscigars-design-min.jpg":"img/projects/graphic-design/brotherscigars-design-min.jpg","./..\\graphic-design\\galaxy-airplane-500.jpg":"img/projects/graphic-design/galaxy-airplane-500.jpg","./..\\graphic-design\\galaxy-airplane-min.jpg":"img/projects/graphic-design/galaxy-airplane-min.jpg","./..\\graphic-design\\galaxy-binoculars-500.jpg":"img/projects/graphic-design/galaxy-binoculars-500.jpg","./..\\graphic-design\\galaxy-binoculars-min.jpg":"img/projects/graphic-design/galaxy-binoculars-min.jpg","./..\\graphic-design\\galaxy-motorcycle-500.jpg":"img/projects/graphic-design/galaxy-motorcycle-500.jpg","./..\\graphic-design\\galaxy-motorcycle-min.jpg":"img/projects/graphic-design/galaxy-motorcycle-min.jpg","./..\\graphic-design\\no1-cigar-promo-500.jpg":"img/projects/graphic-design/no1-cigar-promo-500.jpg","./..\\graphic-design\\no1-cigar-promo-min.jpg":"img/projects/graphic-design/no1-cigar-promo-min.jpg"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _ = _interopRequireDefault(require("../img/projects/**/*.jpg"));
@@ -230,9 +230,10 @@ var cardsArr = document.querySelectorAll('.card');
 var nextBtn = document.querySelector('.next');
 var prevBtn = document.querySelector('.prev'); // declare index of card and interval 
 
-var cardIndex = 0; // Add an interval so it runs every 2seconds
+var cardIndex = 0;
+var TIME = 2500; // Add an interval so it runs every 2seconds
 
-var interval = setInterval(run, 3500);
+var interval = setInterval(run, TIME);
 
 function run() {
   if (widthMatch.matches) {
@@ -260,10 +261,13 @@ function changeCard() {
 nextBtn.addEventListener('click', function () {
   cardIndex++;
   changeCard();
+  clearInterval(interval);
 });
 prevBtn.addEventListener('click', function () {
   cardIndex--;
   changeCard();
+  clearInterval(interval);
+  setInterval(interval, TIME);
 }); // mm in the function arg is the matchMedia object, passed back into the function
 
 widthMatch.addEventListener('change', function (mm) {
@@ -371,7 +375,7 @@ function changePictureInModal(change) {
       img.classList.remove('active');
     }
   });
-}
+} // Fix t
 },{"../img/projects/**/*.jpg":"img/projects/**/*.jpg"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -400,7 +404,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56917" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65291" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

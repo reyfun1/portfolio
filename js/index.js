@@ -14,7 +14,7 @@ const modal = document.querySelector('.modal')
 navLinks.forEach(link =>{
     link.addEventListener('click', (e) => {
         navLinks.forEach(navlink => navlink.classList.remove('active'))
-        e.target.classList.add('active')
+        e.target.classList.add('active')        
     })
 })
 
@@ -54,8 +54,11 @@ const prevBtn = document.querySelector('.prev')
 // declare index of card and interval 
 let cardIndex = 0
 
+const TIME = 2500
+
 // Add an interval so it runs every 2seconds
-let interval = setInterval(run,3500)
+let interval = setInterval(run,TIME)
+
 
 function run(){
     if(widthMatch.matches){
@@ -85,10 +88,14 @@ function changeCard(){
 nextBtn.addEventListener('click', () =>{
     cardIndex++
     changeCard()
+    clearInterval(interval)
+
 })
 prevBtn.addEventListener('click', () =>{
     cardIndex--
     changeCard()
+    clearInterval(interval)
+    setInterval(interval,TIME)
 })
 
 // mm in the function arg is the matchMedia object, passed back into the function
@@ -216,6 +223,8 @@ function changePictureInModal(change){
         }
     })
 }
+
+// Fix t
 
 
 
