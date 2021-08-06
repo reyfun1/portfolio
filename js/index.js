@@ -175,9 +175,9 @@ document.querySelectorAll('.project .project-images img').forEach(img => {
         const fileName = minImageEl.getAttribute('minVersion')
         const assetType = minImageEl.getAttribute('assetType')
 
-        console.log(assetType,fileName)
+        // console.log(assetType,fileName)
         console.log(imgAssets)
-        console.log(imgAssets[assetType][fileName])
+        // console.log(imgAssets[assetType][fileName])
 
         // change the src of the image to the new filename 
         minImageEl.src = imgAssets[assetType][fileName]
@@ -223,8 +223,6 @@ function changePictureInModal(change){
         }
     })
 }
-
-// Fix t
 
 
 
