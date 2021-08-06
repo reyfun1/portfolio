@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  Table of Contents
 1. Global Styles
 2. Typography
@@ -378,6 +379,7 @@ nav ul li {
 .project .project-images {
   position: relative;
   max-width: 515px;
+  margin: 0 auto;
 }
 
 .project .project-images img {
@@ -390,10 +392,11 @@ nav ul li {
   margin-right: 0;
   border-radius: 10px;
   border: 7px solid #2D2E32;
+  max-height: 350px;
+  margin: auto;
 }
 
 .project .project-images img:hover {
-  opacity: 0.65;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.6);
 }
@@ -482,6 +485,16 @@ nav ul li {
 
 .link:hover i {
   color: #2D2E32;
+}
+
+.link.disabled {
+  background-color: #474545;
+  color: #888888;
+  pointer-events: none;
+}
+
+.link.disabled i {
+  color: #888888;
 }
 
 .nav-link {
@@ -746,7 +759,6 @@ nav ul li {
     max-width: 100%;
   }
   .project .project-images {
-    margin: 0;
     margin-top: 2.5rem;
   }
   .project .project-images img {
@@ -854,17 +866,14 @@ nav ul li {
   }
 }
 
-#test {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 90vw;
-  height: 90vh;
+/* No greater than 1400px, no less than 400px */
+@media (max-width: 1400px) and (min-width: 900px) {
+  .project-images img {
+    width: 85%;
+  }
 }
 
+​
 .spacer {
   width: 15%;
 }

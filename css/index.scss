@@ -364,20 +364,20 @@ nav{
     .project-images{
         position: relative;
         max-width: 515px;
-
+        margin: 0 auto;
         img{
             display: none;
             cursor: pointer;
             opacity: 1;
             transition: opacity 0.2s ease-in-out;
             max-width: 100%;
-            //margin: 0 auto;
-            margin-right: 0;
             border-radius: 10px;
             border: 7px solid $bg-grey;
+            max-height: 350px;
+            margin: auto;
 
             &:hover{
-                opacity: 0.65;
+                //opacity: 0.65;
                 box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
             }
             &.active{
@@ -443,6 +443,14 @@ nav{
         color: $bg-dark;
         i{
             color: $bg-dark;
+        }
+    }
+    &.disabled{
+        background-color: rgb(71, 69, 69);
+        color: rgb(136, 136, 136);
+        pointer-events: none;
+        i{
+            color: rgb(136, 136, 136);
         }
     }
 
@@ -622,8 +630,6 @@ nav{
         padding: 0.5rem;
 
         max-height: 85vh;
-
-
         display: none;
         &:hover{
             opacity: 1 !important;
@@ -696,7 +702,6 @@ nav{
             max-width: 100%;
         }
         .project-images{
-            margin: 0;
             margin-top: 2.5rem;
             img{
                 max-width: 100%;
@@ -820,17 +825,15 @@ nav{
 
 }
 
-
-#test{
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 90vw;
-    height: 90vh;
-}
+// Handle Margin between Project Pics 
+/* No greater than 1400px, no less than 400px */
+@media (max-width:1400px) and (min-width:900px) {
+    .project-images{
+        img{
+            width: 85%;
+        }
+    }
+}​
     
 
 .spacer{
