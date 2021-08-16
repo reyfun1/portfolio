@@ -10,14 +10,6 @@
     =====================
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-// $bg-color-primary: #000918;
-// $highlight-color-main: #FF461D;
-// $highlight-color-hover: #ff6744;
-// $bg-overlay: rgba(0,9,24,.8);
-// $bg-glass: rgba(96, 100, 122, 0.3);
-// $bg-grey: #13161C;
-// $bg-dark: #0c0e12;
-
 $bg-color-primary: #25262A;
 $highlight-color-main: #70F3A5;
 $highlight-color-hover: #94f1ba;
@@ -601,6 +593,7 @@ nav{
  
 #modal-pic-number{
    text-align: center;
+   margin: 1rem;
 }
 
 
@@ -637,6 +630,7 @@ nav{
         &.active{
             display: block;
         }
+        max-width: 90vw;
     }
 
     .modal-header{
@@ -663,9 +657,10 @@ nav{
         font-size: 1.5rem;
         padding: .25rem 1rem;
         &:hover{
-            color: gray;
+            color: $highlight-color-hover;
+            border-color: $highlight-color-hover;
             i{
-                color: grey;
+                color: $highlight-color-hover;
             }
         }
     }
@@ -789,7 +784,7 @@ nav{
     
 }
 
-// Handle phone sizes 
+// Handle Phone Sizes
 @media only screen and (max-width: 420px) {
     .nav-hero{
         height: 100vh;
