@@ -1,5 +1,7 @@
 import imgAssets from "../img/projects/**/*.jpg";
 
+console.log(imgAssets)
+
 const navLinks = document.querySelectorAll('.nav-link')
 const sidebarOpenBtn = document.querySelector('#sidebar-btn')
 const sidebarCloseBtn = document.querySelector('#sidebar-close')
@@ -159,7 +161,6 @@ const modalClose = document.querySelector('.modal .close-btn')
 const modalNext = document.querySelector('.modal .next')
 const modalPrev = document.querySelector('.modal .prev')
 const modalPictureCounter = document.querySelector('#modal-pic-number')
-
 let modalIndex = 0;
 
 // Add event listener to all of the images under the projects
@@ -223,14 +224,3 @@ function changePictureInModal(change){
         }
     })
 }
-
-
-
-
-
-
-
-
-
-
-
