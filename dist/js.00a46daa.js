@@ -117,16 +117,16 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"img/projects/cigars-bay-store/cigrsa-bay-2-min.jpg":[function(require,module,exports) {
-module.exports = "/cigrsa-bay-2-min.1a48ec8b.jpg";
-},{}],"img/projects/cigars-bay-store/cigrsa-bay-1-min.jpg":[function(require,module,exports) {
+})({"img/projects/cigars-bay-store/cigrsa-bay-1-min.jpg":[function(require,module,exports) {
 module.exports = "/cigrsa-bay-1-min.19988e5d.jpg";
+},{}],"img/projects/cigars-bay-store/cigrsa-bay-2-min.jpg":[function(require,module,exports) {
+module.exports = "/cigrsa-bay-2-min.1a48ec8b.jpg";
 },{}],"img/projects/cigars-bay-store/cigrsa-bay-3-min.jpg":[function(require,module,exports) {
 module.exports = "/cigrsa-bay-3-min.b5a2f484.jpg";
-},{}],"img/projects/cigars-bay-store/cigrsa-bay-5-min.jpg":[function(require,module,exports) {
-module.exports = "/cigrsa-bay-5-min.b5a04f88.jpg";
 },{}],"img/projects/cigars-bay-store/cigrsa-bay-4-min.jpg":[function(require,module,exports) {
 module.exports = "/cigrsa-bay-4-min.60f351bc.jpg";
+},{}],"img/projects/cigars-bay-store/cigrsa-bay-5-min.jpg":[function(require,module,exports) {
+module.exports = "/cigrsa-bay-5-min.b5a04f88.jpg";
 },{}],"img/projects/cigars-bay-store/cigrsa-bay-6-min.jpg":[function(require,module,exports) {
 module.exports = "/cigrsa-bay-6-min.276e4af0.jpg";
 },{}],"img/projects/cigars-bay-store/cigrsa-bay-7-min.jpg":[function(require,module,exports) {
@@ -151,36 +151,38 @@ module.exports = "/brotherscigars-design-min.d1d04945.jpg";
 module.exports = "/galaxy-airplane-500.e0ac23e0.jpg";
 },{}],"img/projects/graphic-design/galaxy-airplane-min.jpg":[function(require,module,exports) {
 module.exports = "/galaxy-airplane-min.d06f0b43.jpg";
+},{}],"img/projects/graphic-design/cigars-bay-logo-min.jpg":[function(require,module,exports) {
+module.exports = "/cigars-bay-logo-min.d074f817.jpg";
 },{}],"img/projects/graphic-design/galaxy-binoculars-500.jpg":[function(require,module,exports) {
 module.exports = "/galaxy-binoculars-500.9999dabf.jpg";
 },{}],"img/projects/graphic-design/galaxy-binoculars-min.jpg":[function(require,module,exports) {
 module.exports = "/galaxy-binoculars-min.4e2b31af.jpg";
-},{}],"img/projects/graphic-design/galaxy-motorcycle-500.jpg":[function(require,module,exports) {
-module.exports = "/galaxy-motorcycle-500.fe5f6827.jpg";
-},{}],"img/projects/graphic-design/no1-cigar-promo-500.jpg":[function(require,module,exports) {
-module.exports = "/no1-cigar-promo-500.90a8874f.jpg";
 },{}],"img/projects/graphic-design/galaxy-motorcycle-min.jpg":[function(require,module,exports) {
 module.exports = "/galaxy-motorcycle-min.a1df69b5.jpg";
+},{}],"img/projects/graphic-design/galaxy-motorcycle-500.jpg":[function(require,module,exports) {
+module.exports = "/galaxy-motorcycle-500.fe5f6827.jpg";
 },{}],"img/projects/graphic-design/no1-cigar-promo-min.jpg":[function(require,module,exports) {
 module.exports = "/no1-cigar-promo-min.41d3137a.jpg";
+},{}],"img/projects/graphic-design/no1-cigar-promo-500.jpg":[function(require,module,exports) {
+module.exports = "/no1-cigar-promo-500.90a8874f.jpg";
 },{}],"img/projects/rating-cigars/home-page-1.jpg":[function(require,module,exports) {
 module.exports = "/home-page-1.28a7e445.jpg";
-},{}],"img/projects/portfolio-project/portfolio1.jpg":[function(require,module,exports) {
-module.exports = "/portfolio1.841f3800.jpg";
-},{}],"img/projects/portfolio-project/portfolio2.jpg":[function(require,module,exports) {
-module.exports = "/portfolio2.fc89453c.jpg";
 },{}],"img/projects/shopify/home-screen-500.jpg":[function(require,module,exports) {
 module.exports = "/home-screen-500.e6400b86.jpg";
+},{}],"img/projects/portfolio-project/portfolio2.jpg":[function(require,module,exports) {
+module.exports = "/portfolio2.fc89453c.jpg";
 },{}],"img/projects/shopify/home-screen-min.jpg":[function(require,module,exports) {
 module.exports = "/home-screen-min.8c1f3e79.jpg";
+},{}],"img/projects/portfolio-project/portfolio1.jpg":[function(require,module,exports) {
+module.exports = "/portfolio1.841f3800.jpg";
 },{}],"img/projects/**/*.jpg":[function(require,module,exports) {
 module.exports = {
   "cigars-bay-store": {
-    "cigrsa-bay-2-min": require("./..\\cigars-bay-store\\cigrsa-bay-2-min.jpg"),
     "cigrsa-bay-1-min": require("./..\\cigars-bay-store\\cigrsa-bay-1-min.jpg"),
+    "cigrsa-bay-2-min": require("./..\\cigars-bay-store\\cigrsa-bay-2-min.jpg"),
     "cigrsa-bay-3-min": require("./..\\cigars-bay-store\\cigrsa-bay-3-min.jpg"),
-    "cigrsa-bay-5-min": require("./..\\cigars-bay-store\\cigrsa-bay-5-min.jpg"),
     "cigrsa-bay-4-min": require("./..\\cigars-bay-store\\cigrsa-bay-4-min.jpg"),
+    "cigrsa-bay-5-min": require("./..\\cigars-bay-store\\cigrsa-bay-5-min.jpg"),
     "cigrsa-bay-6-min": require("./..\\cigars-bay-store\\cigrsa-bay-6-min.jpg"),
     "cigrsa-bay-7-min": require("./..\\cigars-bay-store\\cigrsa-bay-7-min.jpg"),
     "cigrsa-bay-8-min": require("./..\\cigars-bay-store\\cigrsa-bay-8-min.jpg"),
@@ -197,26 +199,27 @@ module.exports = {
     "brotherscigars-design-min": require("./..\\graphic-design\\brotherscigars-design-min.jpg"),
     "galaxy-airplane-500": require("./..\\graphic-design\\galaxy-airplane-500.jpg"),
     "galaxy-airplane-min": require("./..\\graphic-design\\galaxy-airplane-min.jpg"),
+    "cigars-bay-logo-min": require("./..\\graphic-design\\cigars-bay-logo-min.jpg"),
     "galaxy-binoculars-500": require("./..\\graphic-design\\galaxy-binoculars-500.jpg"),
     "galaxy-binoculars-min": require("./..\\graphic-design\\galaxy-binoculars-min.jpg"),
-    "galaxy-motorcycle-500": require("./..\\graphic-design\\galaxy-motorcycle-500.jpg"),
-    "no1-cigar-promo-500": require("./..\\graphic-design\\no1-cigar-promo-500.jpg"),
     "galaxy-motorcycle-min": require("./..\\graphic-design\\galaxy-motorcycle-min.jpg"),
-    "no1-cigar-promo-min": require("./..\\graphic-design\\no1-cigar-promo-min.jpg")
+    "galaxy-motorcycle-500": require("./..\\graphic-design\\galaxy-motorcycle-500.jpg"),
+    "no1-cigar-promo-min": require("./..\\graphic-design\\no1-cigar-promo-min.jpg"),
+    "no1-cigar-promo-500": require("./..\\graphic-design\\no1-cigar-promo-500.jpg")
   },
   "rating-cigars": {
     "home-page-1": require("./..\\rating-cigars\\home-page-1.jpg")
   },
-  "portfolio-project": {
-    "portfolio1": require("./..\\portfolio-project\\portfolio1.jpg"),
-    "portfolio2": require("./..\\portfolio-project\\portfolio2.jpg")
-  },
   "shopify": {
     "home-screen-500": require("./..\\shopify\\home-screen-500.jpg"),
     "home-screen-min": require("./..\\shopify\\home-screen-min.jpg")
+  },
+  "portfolio-project": {
+    "portfolio2": require("./..\\portfolio-project\\portfolio2.jpg"),
+    "portfolio1": require("./..\\portfolio-project\\portfolio1.jpg")
   }
 };
-},{"./..\\cigars-bay-store\\cigrsa-bay-2-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-2-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-1-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-1-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-3-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-3-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-5-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-5-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-4-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-4-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-6-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-6-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-7-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-7-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-8-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-8-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-9-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-9-min.jpg","./..\\crm-web-app\\accountpage-500.jpg":"img/projects/crm-web-app/accountpage-500.jpg","./..\\crm-web-app\\accountpage-min.jpg":"img/projects/crm-web-app/accountpage-min.jpg","./..\\graphic-design\\booth-promo-500.jpg":"img/projects/graphic-design/booth-promo-500.jpg","./..\\graphic-design\\brotherscigars-design-500.jpg":"img/projects/graphic-design/brotherscigars-design-500.jpg","./..\\graphic-design\\booth-promo-min.jpg":"img/projects/graphic-design/booth-promo-min.jpg","./..\\graphic-design\\brotherscigars-design-min.jpg":"img/projects/graphic-design/brotherscigars-design-min.jpg","./..\\graphic-design\\galaxy-airplane-500.jpg":"img/projects/graphic-design/galaxy-airplane-500.jpg","./..\\graphic-design\\galaxy-airplane-min.jpg":"img/projects/graphic-design/galaxy-airplane-min.jpg","./..\\graphic-design\\galaxy-binoculars-500.jpg":"img/projects/graphic-design/galaxy-binoculars-500.jpg","./..\\graphic-design\\galaxy-binoculars-min.jpg":"img/projects/graphic-design/galaxy-binoculars-min.jpg","./..\\graphic-design\\galaxy-motorcycle-500.jpg":"img/projects/graphic-design/galaxy-motorcycle-500.jpg","./..\\graphic-design\\no1-cigar-promo-500.jpg":"img/projects/graphic-design/no1-cigar-promo-500.jpg","./..\\graphic-design\\galaxy-motorcycle-min.jpg":"img/projects/graphic-design/galaxy-motorcycle-min.jpg","./..\\graphic-design\\no1-cigar-promo-min.jpg":"img/projects/graphic-design/no1-cigar-promo-min.jpg","./..\\rating-cigars\\home-page-1.jpg":"img/projects/rating-cigars/home-page-1.jpg","./..\\portfolio-project\\portfolio1.jpg":"img/projects/portfolio-project/portfolio1.jpg","./..\\portfolio-project\\portfolio2.jpg":"img/projects/portfolio-project/portfolio2.jpg","./..\\shopify\\home-screen-500.jpg":"img/projects/shopify/home-screen-500.jpg","./..\\shopify\\home-screen-min.jpg":"img/projects/shopify/home-screen-min.jpg"}],"js/index.js":[function(require,module,exports) {
+},{"./..\\cigars-bay-store\\cigrsa-bay-1-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-1-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-2-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-2-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-3-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-3-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-4-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-4-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-5-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-5-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-6-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-6-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-7-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-7-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-8-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-8-min.jpg","./..\\cigars-bay-store\\cigrsa-bay-9-min.jpg":"img/projects/cigars-bay-store/cigrsa-bay-9-min.jpg","./..\\crm-web-app\\accountpage-500.jpg":"img/projects/crm-web-app/accountpage-500.jpg","./..\\crm-web-app\\accountpage-min.jpg":"img/projects/crm-web-app/accountpage-min.jpg","./..\\graphic-design\\booth-promo-500.jpg":"img/projects/graphic-design/booth-promo-500.jpg","./..\\graphic-design\\brotherscigars-design-500.jpg":"img/projects/graphic-design/brotherscigars-design-500.jpg","./..\\graphic-design\\booth-promo-min.jpg":"img/projects/graphic-design/booth-promo-min.jpg","./..\\graphic-design\\brotherscigars-design-min.jpg":"img/projects/graphic-design/brotherscigars-design-min.jpg","./..\\graphic-design\\galaxy-airplane-500.jpg":"img/projects/graphic-design/galaxy-airplane-500.jpg","./..\\graphic-design\\galaxy-airplane-min.jpg":"img/projects/graphic-design/galaxy-airplane-min.jpg","./..\\graphic-design\\cigars-bay-logo-min.jpg":"img/projects/graphic-design/cigars-bay-logo-min.jpg","./..\\graphic-design\\galaxy-binoculars-500.jpg":"img/projects/graphic-design/galaxy-binoculars-500.jpg","./..\\graphic-design\\galaxy-binoculars-min.jpg":"img/projects/graphic-design/galaxy-binoculars-min.jpg","./..\\graphic-design\\galaxy-motorcycle-min.jpg":"img/projects/graphic-design/galaxy-motorcycle-min.jpg","./..\\graphic-design\\galaxy-motorcycle-500.jpg":"img/projects/graphic-design/galaxy-motorcycle-500.jpg","./..\\graphic-design\\no1-cigar-promo-min.jpg":"img/projects/graphic-design/no1-cigar-promo-min.jpg","./..\\graphic-design\\no1-cigar-promo-500.jpg":"img/projects/graphic-design/no1-cigar-promo-500.jpg","./..\\rating-cigars\\home-page-1.jpg":"img/projects/rating-cigars/home-page-1.jpg","./..\\shopify\\home-screen-500.jpg":"img/projects/shopify/home-screen-500.jpg","./..\\portfolio-project\\portfolio2.jpg":"img/projects/portfolio-project/portfolio2.jpg","./..\\shopify\\home-screen-min.jpg":"img/projects/shopify/home-screen-min.jpg","./..\\portfolio-project\\portfolio1.jpg":"img/projects/portfolio-project/portfolio1.jpg"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _ = _interopRequireDefault(require("../img/projects/**/*.jpg"));
@@ -444,7 +447,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63866" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49547" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
