@@ -1,8 +1,8 @@
 # Personal Portfolio 
 > Responsive Single Page App portfolio built with Vanilla JS using HTML,SASS & Javascript
 
+This is my portfolio that I built using Vanilla Javascript. I designed the UI in Adobe XD, using SASS, I wrote custom styling, handling animations and screen responsiveness.
 <!-- Portfolio Image -->
-
 ![Project Picture](/portfolio/img/projects/portfolio-project/portfolio1.jpg)
 *Desktop view*
 - - - 
