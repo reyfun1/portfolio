@@ -3,11 +3,11 @@
 
 This is my portfolio that I built using Vanilla Javascript. I designed the UI in Adobe XD, using SASS, I wrote custom styling, handling animations and screen responsiveness.
 <!-- Portfolio Image -->
-![Project Picture](/portfolio/img/projects/portfolio-project/portfolio1.jpg)
+![Project Picture](/portfolio/img/projects/portfolio-project/portfolio1.JPG)
 *Desktop view*
 - - - 
 
-![Project Picture](/portfolio/img/projects/portfolio-project/portfolio2.jpg)
+![Project Picture](/portfolio/img/projects/portfolio-project/portfolio2.JPG)
 *Mobile View*
 - - - 
 
