@@ -16,6 +16,7 @@
 - - - 
 
 ## Future Changes 
+* [x] Add lightbox to display multiple pictures
 * [] Add animations to picture lightbox
 * [] Add loader when loading pictures
 * [] Make Contact Form 
