@@ -1,12 +1,11 @@
+// Import all jpgs 
 import imgAssets from "../img/projects/**/*.jpg";
 
-console.log(imgAssets)
-
+// All DOM variables
 const navLinks = document.querySelectorAll('.nav-link')
 const sidebarOpenBtn = document.querySelector('#sidebar-btn')
 const sidebarCloseBtn = document.querySelector('#sidebar-close')
 const sidebarContainer = document.querySelector('.sidebar-container')
-const sectionTitles = document.querySelectorAll('.section-title')
 const sections = document.querySelectorAll('.web-section')
 const projectSelectors = document.querySelectorAll('.item-selector-header button')
 const projectsArr = document.querySelectorAll('.project')
@@ -20,7 +19,7 @@ navLinks.forEach(link =>{
     })
 })
 
-/****** SIDE BAR FUNCTION *****/
+/****** SIDE BAR *****/
 const toggleContainer = () => sidebarContainer.classList.toggle('active')
 
 // Btn click that open / close of sidebar
@@ -43,7 +42,7 @@ window.addEventListener('touchstart', e => {
 
 
 
-/******  IMAGE CAROUSEL *****/
+/****** SKILLS CARDS CAROUSEL *****/
 // Window is smaller than 900px
 const widthMatch = window.matchMedia("(max-width: 900px)");
 
@@ -91,7 +90,6 @@ nextBtn.addEventListener('click', () =>{
     cardIndex++
     changeCard()
     clearInterval(interval)
-
 })
 prevBtn.addEventListener('click', () =>{
     cardIndex--
@@ -175,10 +173,6 @@ document.querySelectorAll('.project .project-images img').forEach(img => {
         // extract the file name of the min file
         const fileName = minImageEl.getAttribute('minVersion')
         const assetType = minImageEl.getAttribute('assetType')
-
-        // console.log(assetType,fileName)
-        console.log(imgAssets)
-        // console.log(imgAssets[assetType][fileName])
 
         // change the src of the image to the new filename 
         minImageEl.src = imgAssets[assetType][fileName]
